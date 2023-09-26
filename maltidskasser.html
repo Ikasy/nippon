@@ -6,20 +6,48 @@
     <title>Nippon Måltidskasser | Måltidskasser</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img src="" alt="Nippon Logo">
-        <nav>
-            <a href="opskrifter">Opskrifter</a>
-            <a href="">Måltidskasser</a>
-            <a href="">Om</a>
+        <nav class="LHead">
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+            
+            <a href="opskrifter.html">Opskrifter</a>
+            <a href="maltidskasser.html">Måltidskasser</a>
+
+            <div class="dropdown">
+                <a href="omos.html">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                    <div class="dropdown-content">
+                        <a href="omos.html"> Om Os </a>
+                        <a href="omjapanmad.html"> Om Japansk Mad </a>
+                    </div>
+            </div>
+
+            <div id="headericons">
+                <a href="kurv.html"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #000000;"></i></a>
+                <a href="profil.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></i></a>
+            </div>
         </nav>
 
-        <div>
-            <a href=""><img src="" alt="Kurv"></a>
-            <a href=""><img src="" alt="Profil"></a>
-        </div>
+
+
+
+
+
+        <nav class="MHead">
+            <img class="logo" src="media/nipponlogo.png" alt="Nippon Logo">
+            <button id="menu">&#9776;</button>
+            <div>
+                <a href="opskrifter">Opskrifter</a>
+                <a href="">Måltidskasser</a>
+                <a href="">Om</a>
+            </div>
+        </nav>
+
+            
+        
+        
     </header>
 </body>
 </html>
