@@ -28,7 +28,7 @@ margin-right: 20px;
   width: 100px;
 }
 
-.MHead{
+#MHead{
   display: none;
 }
 
@@ -58,4 +58,15 @@ margin-right: 20px;
   align-items: center;
   width: 10px;
   margin-left: 2px;
+}
+
+
+
+/*---------------------------- Mobil version ----------------------------*/
+
+@media only screen and (max-width: 900px){
+/*---------------------------- Header ----------------------------*/
+
+/*---------------------------- Dropdown ----------------------------*/
+
 }

@@ -89,15 +89,7 @@ header{
   }
   
   @media only screen and (max-width: 900px){
-    .laptop{
-        display: none;
-    }
-    .mobil{
-        display: block;
-    }
-    .header{
-        display: none;
-    }
+
     nav{
       justify-content: space-between;
       padding: 0 5vw;
