@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background-color: #FFF9F6;
 
 }
 
-h1{
+h1 {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 36px;
@@ -19,118 +20,124 @@ h1{
   margin-bottom: 50px;
 }
 
-h2{
+h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 24px;
   margin: 25px 0px;
 }
-h3{
+
+h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
   font-size: 18px;
 }
-p{
+
+p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
-a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 
 /*---------------------------- Header ----------------------------*/
-  header{
-    width: 100%;
-    height: 115px;
+header {
+  width: 100%;
+  height: 115px;
 
-    position: fixed;
-    top: 0;
-    
-    background-color: #FFFFFF;
-    filter: drop-shadow(0px 10px 10px #e2e2e2);
-    z-index: 100;
-    }
+  position: fixed;
+  top: 0;
 
-  .logo{
-    width: 100px;
-  }
-  nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  } 
+  background-color: #FFFFFF;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  z-index: 100;
+}
 
-  .nav-links {
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-  } 
+.logo {
+  width: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-links {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
 
 
-  .nav-links a{
-    transition:0.3s ease;
-    transform: translateX(0%);
-  }
+.nav-links a {
+  transition: 0.3s ease;
+  transform: translateX(0%);
+}
 
-  .nav-links a:hover{
-    text-decoration: underline;
-    color: deeppink;
-    text-decoration-color: deeppink;
-    letter-spacing: 1px;
-  }
+.nav-links a:hover {
+  text-decoration: underline;
+  color: deeppink;
+  text-decoration-color: deeppink;
+  letter-spacing: 1px;
+}
 
-  #headericons a{
-    margin-right: 20px;
-  }
+#headericons a {
+  margin-right: 20px;
+}
 
-  /*---------------------------- Burger ----------------------------*/
+/*---------------------------- Burger ----------------------------*/
 
-  .burger{
-    display: none;
-  }
+.burger {
+  display: none;
+}
 
-  .burger div{
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    border-radius: 20%;
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 20%;
 
-    background: black;
-    transition:all 0.5s ease;
-    
-  }
+  background: black;
+  transition: all 0.5s ease;
 
-  .dropdown-list{
-    color: black;
-    position: absolute;
-    z-index: 1;
+}
 
-  }
-.dropdown-list a{
-  display: block;  /* gør sådan hvert link står for sig selv */
+.dropdown-list {
+  color: black;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.dropdown-list a {
+  display: block;
+  /* gør sådan hvert link står for sig selv */
   margin: 10px 0px;
 }
 
-  #dropdownikon{
-    align-self: center;
-    width: 10px;
-    margin-left: 2px;
-    margin-bottom: 3px;
-  }
+#dropdownikon {
+  align-self: center;
+  width: 10px;
+  margin-left: 2px;
+  margin-bottom: 3px;
+}
 
 /*---------------------------- Måltidskasser ----------------------------*/
 
-.border{
+.border {
   border-right: black 2px solid;
 }
 
-#kasser{
+#kasser {
   width: 90%;
   margin: auto;
   display: flex;
@@ -142,7 +149,8 @@ a{
   filter: drop-shadow(0px 10px 10px #e2e2e2);
 
 }
-#kasser section{
+
+#kasser section {
   display: flex;
   width: 25%;
   flex-direction: column;
@@ -150,12 +158,12 @@ a{
   padding: 0% 2%;
 }
 
-#kasser section img{
-  width: 100%; 
+#kasser section img {
+  width: 100%;
 
 }
 
-.kasseknapper{
+.kasseknapper {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -163,89 +171,140 @@ a{
 
 }
 
-.enkøb{
+.enkøb {
   border: black 2px solid;
   border-radius: 50px;
   padding: 10px 20px;
   margin-top: 25px;
 }
-.abonnement{
+
+.abonnement {
   border-radius: 50px;
   padding: 10px 20px;
   background-color: black;
   color: #FFFFFF;
   margin-top: 25px;
-  
+
+}
+
+/*---------------------------- OM OS LAPTOP ----------------------------*/
+
+
+
+.logoomcontainer {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 1000px;
+}
+
+.logoom {
+  max-width: 437px;
+  max-height: 488px;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+
+.indholdom {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 22%;
+  margin-right: 22%;
+
+}
+
+.indholdom-box {
+  background-color: white;
+  padding: 5% 10%;
+  border-radius: 20px;
+
 }
 
 
-  /*---------------------------- Mobil ----------------------------*/
+ol {
+  margin-top: 20px;
+}
 
-  @media only screen and (max-width: 900px){
+li {
+  margin-bottom: 15px;
+}
+
+strong {
+  margin-top: 10px;
+}
+
+
+/*---------------------------- Mobil ----------------------------*/
+
+@media only screen and (max-width: 900px) {
   /*---------------------------- Nav og Burger ----------------------------*/
 
-    .burger{
-      display: block;
-    }
-    nav{
-      justify-content: space-between;
-    }
+  .burger {
+    display: block;
+  }
 
-    .nav-links{
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      top: 0px;
-      right: 0;
-      
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
+  nav {
+    justify-content: space-between;
+  }
 
-       background: rgb(255, 227, 227);/* Husk at skifte farve */
+  .nav-links {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0;
 
-      transform: translateX(100%);
-      transition:All 0.5s ease;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 
-    .nav-links a{
+    background: rgb(255, 227, 227);
+    /* Husk at skifte farve */
 
-      opacity: 0;
-    }
-    #headericons{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    #headericons a{
-      margin-top: 40px;
-    }
+    transform: translateX(100%);
+    transition: All 0.5s ease;
+  }
+
+  .nav-links a {
+
+    opacity: 0;
+  }
+
+  #headericons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #headericons a {
+    margin-top: 40px;
+  }
 
 
-    .nav-active{
+  .nav-active {
     transform: translateX(0);
   }
 
   /*---------------------------- Måltidskasser----------------------------*/
 
-  .border{
+  .border {
     border-right: none;
     border-bottom: black 2px solid;
   }
-  
-  #kasser{
+
+  #kasser {
     display: block;
     justify-content: space-around;
-  
+
     background: none;
     padding: 0px;
     border-radius: 0px;
     filter: drop-shadow(0px 10px 10px #e2e2e2);
-  
+
   }
 
-  #kasser section{
+  #kasser section {
     width: 90%;
     margin: auto;
     margin-bottom: 50px;
@@ -260,42 +319,63 @@ a{
     filter: drop-shadow(0px 10px 10px #e2e2e2);
 
   }
-  
-  #kasser section img{
+
+  #kasser section img {
     border-radius: 40px;
 
   }
-  
-  .kasseknapper{
+
+  .kasseknapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
+
   }
-  
+
+  /*---------------------------- OM OS ----------------------------*/
+
+
+  .logoomcontainer {
+    margin-top: 5%;
+    margin-bottom: 20px;
+  }
+
+  .indholdom {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .indholdom-box {
+    padding: 5% 5%;
+  }
 
 
 
-  }
-  
- 
-  @keyframes navLinkFade{
-    from{
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to{
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px );
-  }
-  .toggle .line2{
+
+}
+
+
+@keyframes navLinkFade {
+  from {
     opacity: 0;
+    transform: translateX(50px);
   }
-  .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px );
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
