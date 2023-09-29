@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+@font-face {
+  font-family: japanese;
+  src: url(media/Almost\ Japanese\ Comic.ttf);
+}
 
 * {
   margin: 0;
@@ -11,9 +15,10 @@ body {
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'japanese', sans-serif;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 50px;
+  color: #650909;
   text-align: center;
 
   margin-top: 165px;
@@ -87,8 +92,8 @@ nav {
 
 .nav-links a:hover {
   text-decoration: underline;
-  color: deeppink;
-  text-decoration-color: deeppink;
+  color: green;
+  text-decoration-color: black;
   letter-spacing: 1px;
 }
 
@@ -137,6 +142,9 @@ nav {
 
 .border {
   border-right: black 2px solid;
+}
+.border:last-child{
+  border: none;
 }
 
 #kasser {
@@ -204,7 +212,7 @@ nav {
   max-height: 488px;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  
 }
 
 .indholdom {
@@ -293,6 +301,8 @@ strong {
   .border {
     border-right: none;
     border-bottom: black 2px solid;
+  }.border:last-child{
+    border-bottom: black 2px solid;
   }
 
   #kasser {
@@ -309,11 +319,14 @@ strong {
   #kasser section {
     width: 90%;
     margin: auto;
+    height: 100%;
     margin-bottom: 50px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    
 
     padding: 5%;
     background-color: #FFFFFF;
@@ -332,7 +345,7 @@ strong {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    margin-top: auto;
   }
 
   /*---------------------------- OM OS ----------------------------*/
