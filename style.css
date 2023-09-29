@@ -92,8 +92,8 @@ nav {
 
 .nav-links a:hover {
   text-decoration: underline;
-  color: deeppink;
-  text-decoration-color: deeppink;
+  color: green;
+  text-decoration-color: black;
   letter-spacing: 1px;
 }
 
@@ -212,7 +212,7 @@ nav {
   max-height: 488px;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  
 }
 
 .indholdom {
