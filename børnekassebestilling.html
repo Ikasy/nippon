@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nippon Måltidskasser | Forside</title>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+            
+            <ul class="nav-links"> 
+                
+                <a href="opskrifter.html">Opskrifter</a> 
+                <a href="maltidskasser.html">Måltidskasser</a>
+
+                <div class="menu-dropdown" onclick = "openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                        <div class="dropdown-list" id="omlist">
+                            <div>
+                                <a id="droptop" href="omos.html">Om os</a>
+                            </div>
+                            <div>
+                                <a href="omjapanmad.html">Om Japansk Mad</a>
+                            </div>
+                        </div>
+                </div>
+
+                <div id="headericons">
+                    <a href="kurv.html"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #000000;"></i></a>
+                    <a href="profil.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                </div>
+            </ul>
+            
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="kassecontainer">
+        <img src="media/LKasserFritlagtBørn.png" alt="Børnekasse">
+        <h1>Børnekasse</h1>
+
+        <div id="personer">
+        <h2><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i> Personer</h2> 
+        <input type="number" id="inputprice" placeholder="f.eks. 4" value="">
+        </div>
+
+        <h2>Retter</h2>
+        <div id="retter">
+            <section>
+                <div>
+                    <img src="media/LOpskriftYakisoba.jpg" alt="Yakisoba ret">
+                    <h3>Yakisoba</h3>
+                </div>
+
+                <input type="number" class="nrretter" placeholder="mængde af retter" value="">
+            </section>
+
+            <section>
+                <div>
+                    <img src="media/LOpskriftKarry.jpg" alt="Japansk Karry ret">
+                    <h3>Japansk Karry</h3>
+                </div>
+
+                <input type="number" class="nrretter" placeholder="mængde af retter" value="">
+            </section>
+
+            <section>
+                <div>
+                    <img src="media/LOpskriftSushi.jpg" alt="Sushi Kugler ret">
+                    <h3>Sushi Kugler</h3>
+                </div>
+
+                <input type="number" class="nrretter" placeholder="mængde af retter" value="">
+            </section>
+        </div>
+    </div>
+    <input type="button" id="knap" value="Tilføj">
+</body>
+</html>
