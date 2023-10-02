@@ -453,10 +453,12 @@ input[type=number] {
 }
 
 .logoom {
-  max-width: 437px;
-  max-height: 488px;
+  max-width: 420px;
+  max-height: 380px;
   width: 100%;
   height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
   
 }
 
