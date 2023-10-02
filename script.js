@@ -13,14 +13,14 @@ let price = [];
 let showItem = "";
 let showPrice = 0;
 
-ikurv.onclick = tilfoejTilListe;
+// ikurv.onclick = tilfoejTilListe;
 
-function tilfoejTilListe(){
-    if (yakisoba){
+// function tilfoejTilListe(){
+//     if (yakisoba){
 
-    }
+//     }
 
-}
+// }
 
 
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
