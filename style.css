@@ -138,9 +138,9 @@ nav {
 }
 
 /*-----------------------------Forside-----------------------------------*/
+
 :root {
-    --secondary-color: #ffff;
-    --contrast-color: #fdf5f5;
+    --secondary-color: #fdf5f5;
   }
   .overlay {
     position: absolute;
@@ -150,18 +150,18 @@ nav {
     bottom: 0;
     height: 100%;
     z-index: -10;
-    background-image: url(media/Lgul-grøn-højre.jpg);
+    background-image: url(media/savoybaggrund.jpg);
+    
   }
   
   .container {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto;
     margin-top: 18vh;
     height: 75vh;
     border: 1px solid #1e6904;
     border-radius: 15px;
-    filter: drop-shadow(0px 10px 10px #e2e2e2);
     justify-content: space-between;
     gap: inherit;
     align-items: center;
@@ -433,6 +433,7 @@ strong {
 
   .container{
     flex-direction: column;
+    justify-content: start;
 }
 .container_outer_img{
     width: 95%;
