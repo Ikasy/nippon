@@ -1,11 +1,46 @@
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a"); /*dette er et array - alle med classnamet nav-links indsættes */
-console.log("4");
+const yakisoba = document.getElementById("yakisobanrretter")
+const karry = document.getElementById("karrynrretter")
+const sushi = document.getElementById("sushinrretter")
+const personer = document.getElementById("person")
+const ikurv = document.getElementById("ikurv")
+
+// let item = [];
+// let price = [];
+
+// let showItem = "";
+// let showPrice = 0;
+
+// ikurv.onclick = tilfoejTilKurv;
+
+// function tilfoejTilKurv(){
+
+//     let karryinput = parseFloat(karry.value);
+//     let yakisobainput = parseFloat(yakisoba.value);
+//     let sushiinput = parseFloat(sushi.value);
+//     let person = parseFloat(sushi.value);
+
+//     if (yakisobainput > 0){
+//         item.push("Yakisoba");
+//     }   
+
+//     if (karryinput > 0){
+//         item.push("Japansk Karry");
+        
+//     }
+
+//     if (sushiinput > 0){
+//         item.push("Sushi Kugler");
+
+//     }
+
+// }
+
+
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
-console.log("6");    
 nav.classList.toggle("nav-active"); 
-console.log(navLinks.length);    
     navLinks.forEach((link, index) => {  /* gennemløb af alle elementer med class'en nav-links */ 
     
     if (link.style.animation) {
