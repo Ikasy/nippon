@@ -9,117 +9,81 @@
     <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+            
+            <ul class="nav-links"> 
+                
+                <a href="opskrifter.html">Opskrifter</a> 
+                <a href="maltidskasser.html">Måltidskasser</a>
     
-</body>
-<div class="opskriftcontainer">
-    <div class="opskrifttekst">
-        <h1 id="pladstilheader">OPSKRIFTER</h1>
-        <div id="underoverskrift">
-            <div class="streg"></div>
-            <p id="underp">OPSKRIFTER</p>
-            <div class="streg"></div>
+                <div class="menu-dropdown" onclick = "openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                        <div class="dropdown-list" id="omlist">
+                            <div>
+                                <a id="droptop" href="omos.html">Om os</a>
+                            </div>
+                            <div>
+                                <a href="omjapanmad.html">Om Japansk Mad</a>
+                            </div>
+                        </div>
+                </div>
+    
+                <div id="headericons">
+                    <a href="kurv.html"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #000000;"></i></a>
+                    <a href="profil.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                </div>
+            </ul>
+            
+    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <div class="opskriftcontainer">
+        <div class="opskrifttekst">
+            <h1 id="pladstilheader">OPSKRIFTER</h1>
+            <div id="underoverskrift">
+                <div class="streg"></div>
+                <p id="underp">OPSKRIFTER</p>
+                <div class="streg"></div>
+            </div>
+        </div>
+
+        <div class="opskriftbaggrund"> 
+            <img id="enokiTV" src="media/OpskriftEnokiTV.png" alt="enokisvamp">
+            <img id="enokiTH" src="media/enokiTH.png" alt="enokisvamp">    
         </div>
     </div>
 
-    <div class="opskriftbaggrund"> 
-        <img id="enokiTV" src="media/OpskriftEnokiTV.png" alt="enokisvamp">
-        <img id="enokiTH" src="media/OpskriftEnokiTH.png" alt="enokisvamp">    
-    </div>
-</div>
-
-<div class="opskriftkort marginbottom100">
-    <a href="riskugler.html"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftSushi.jpg" alt="sushikugler"></a>
-    <a href="riskugler.html"><img class="opskriftkortpic mobil" src="media/MOpskriftSushi.jpg" alt="sushikugler"></a>
-    <div class="opskriftteaser">
-        <h3>Sushikugler</h3>
-        <p>Sushikulger er en nemmere udgave af almindelig sushi, du kan dekorere med forskelligt frugt og grønt eller fisk</p>
-        
-        
-
-        <div class="sværhedsgrad">
-            <img class="indikator" src="media/broccoligrøn.png">
-            <img class="indikator" src="media/broccolish.png">
-            <img class="indikator" src="media/broccolish.png">
-            <img class="indikator" src="media/broccolish.png">
-            <img class="indikator" src="media/broccolish.png">
-        </div>
-        <a class="abonnement knapwidth" href="riskugler.html">Se opskrift</a>
-    </div>
-</div>
-
-<div class="opskriftcontainer marginbottom100">
-    <div class="opskriftkort posabs">
-        <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftYakisoba.jpg" alt="Yakisoba"></a>
-        <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftYakisoba.jpg" alt="Yakisoba"></a>
+    <div class="opskriftkort marginbottom100">
+        <a href="riskugler.html"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftSushi.jpg" alt="sushikugler"></a>
+        <a href="riskugler.html"><img class="opskriftkortpic mobil" src="media/MOpskriftSushi.jpg" alt="sushikugler"></a>
         <div class="opskriftteaser">
-            <h3>Yakisoba</h3>
-            <p>Yakisoba er en japansk ret, der består af stegte nudler, skiver af svinekød eller kylling, og en blanding af sprøde grøntsager som kål, gulerødder og løg</p>
+            <h3>Sushikugler</h3>
+            <p>Sushikulger er en nemmere udgave af almindelig sushi, du kan dekorere med forskelligt frugt og grønt eller fisk</p>
             
-            <div class="sværhedsgrad">
-                <img class="indikator" src="media/kylling.png" alt="kyllingeikon">
-            </div>
             
-            <p>Sværhedsgrad:</p>
 
             <div class="sværhedsgrad">
                 <img class="indikator" src="media/broccoligrøn.png">
-                <img class="indikator" src="media/broccoligrøn.png">
+                <img class="indikator" src="media/broccolish.png">
                 <img class="indikator" src="media/broccolish.png">
                 <img class="indikator" src="media/broccolish.png">
                 <img class="indikator" src="media/broccolish.png">
             </div>
-            <a class="abonnement knapwidth" href="#">Se opskrift</a>
+            <a class="abonnement knapwidth" href="riskugler.html">Se opskrift</a>
         </div>
     </div>
 
-    <div class="opskriftbaggrund"> 
-        <img class="marginbottom100" id="enokiMH" src="media/OpskriftEnokiMH.png" alt="enokisvamp">    
-    </div>
-</div>
-
-<div class="opskriftcontainer">
-    <div class="opskriftkort posabs">
-        <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftKarry.jpg" alt="Yakisoba"></a>
-        <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftKarry.jpg" alt="Yakisoba"></a>
-        <div class="opskriftteaser">
-            <h3>Kare Raisu</h3>
-            <p>Japansk karryret med ris og godt oksekød. Kødet kan erstattes af svin eller fars,hvis du ønsker en mere børne venlig udgave</p>
-            
-            <div class="sværhedsgrad">
-                <img class="indikator" src="media/okse.png" alt="okseikon">
-                <img class="indikator" src="media/svin.png" alt="svineikon">
-            </div>
-            
-            <p>Sværhedsgrad:</p>
-
-            <div class="sværhedsgrad">
-                <img class="indikator" src="media/broccoligrøn.png">
-                <img class="indikator" src="media/broccoligrøn.png">
-                <img class="indikator" src="media/broccoligrøn.png">
-                <img class="indikator" src="media/broccolish.png">
-                <img class="indikator" src="media/broccolish.png">
-            </div>
-            <a class="abonnement knapwidth" href="#">Se opskrift</a>
-        </div>
-    </div>
-
-    <div class="opskriftbaggrund"> 
-        <img id="enokiMV" src="media/OpskriftEnokiMV.png" alt="enokisvamp">    
-    </div>
-</div>
-
-
-
-
-
-<div class="blurcontainer">
-    <div id="logpåNÅ">
-        <p>Beklager - du er ikke logget ind. <br>Log ind for at se resten af vores fantastiske opskrtfer</p>
-        <a class="abonnement" href="#">Log på her</a>
-    </div>
-
-    <div class="posrel">
-        <div class="opskriftkort marginbottom100 blur">
+    <div class="opskriftcontainer marginbottom100">
+        <div class="opskriftkort posabs">
             <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftYakisoba.jpg" alt="Yakisoba"></a>
             <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftYakisoba.jpg" alt="Yakisoba"></a>
             <div class="opskriftteaser">
@@ -143,21 +107,26 @@
             </div>
         </div>
 
+        <div class="opskriftbaggrund"> 
+            <img class="marginbottom100" id="enokiMH" src="media/OpskriftEnokiMH.png" alt="enokisvamp">    
+        </div>
+    </div>
 
-        <div class="opskriftkort blur">
+    <div class="opskriftcontainer">
+        <div class="opskriftkort posabs">
             <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftKarry.jpg" alt="Yakisoba"></a>
             <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftKarry.jpg" alt="Yakisoba"></a>
             <div class="opskriftteaser">
                 <h3>Kare Raisu</h3>
                 <p>Japansk karryret med ris og godt oksekød. Kødet kan erstattes af svin eller fars,hvis du ønsker en mere børne venlig udgave</p>
-                    
+                
                 <div class="sværhedsgrad">
                     <img class="indikator" src="media/okse.png" alt="okseikon">
                     <img class="indikator" src="media/svin.png" alt="svineikon">
                 </div>
-                    
+                
                 <p>Sværhedsgrad:</p>
-        
+
                 <div class="sværhedsgrad">
                     <img class="indikator" src="media/broccoligrøn.png">
                     <img class="indikator" src="media/broccoligrøn.png">
@@ -168,7 +137,74 @@
                 <a class="abonnement knapwidth" href="#">Se opskrift</a>
             </div>
         </div>
-    </div>
-</div>
 
+        <div class="opskriftbaggrund"> 
+            <img id="enokiMV" src="media/OpskriftEnokiMV.png" alt="enokisvamp">    
+        </div>
+    </div>
+
+
+
+
+
+    <div id="blurcontainer">
+        <div id="logpåNÅ">
+            <p>Beklager - du er ikke logget ind. <br>Log ind for at se resten af vores fantastiske opskrtfer</p>
+            <a class="abonnement" href="#">Log på her</a>
+        </div>
+
+        <div class="posrel">
+            <div class="opskriftkort marginbottom100 blur">
+                <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftYakisoba.jpg" alt="Yakisoba"></a>
+                <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftYakisoba.jpg" alt="Yakisoba"></a>
+                <div class="opskriftteaser">
+                    <h3>Yakisoba</h3>
+                    <p>Yakisoba er en japansk ret, der består af stegte nudler, skiver af svinekød eller kylling, og en blanding af sprøde grøntsager som kål, gulerødder og løg</p>
+                    
+                    <div class="sværhedsgrad">
+                        <img class="indikator" src="media/kylling.png" alt="kyllingeikon">
+                    </div>
+                    
+                    <p>Sværhedsgrad:</p>
+
+                    <div class="sværhedsgrad">
+                        <img class="indikator" src="media/broccoligrøn.png">
+                        <img class="indikator" src="media/broccoligrøn.png">
+                        <img class="indikator" src="media/broccolish.png">
+                        <img class="indikator" src="media/broccolish.png">
+                        <img class="indikator" src="media/broccolish.png">
+                    </div>
+                    <a class="abonnement knapwidth" href="#">Se opskrift</a>
+                </div>
+            </div>
+
+
+            <div class="opskriftkort blur">
+                <a href="#"><img class="opskriftkortpic laptop zoom" src="media/LOpskriftKarry.jpg" alt="Yakisoba"></a>
+                <a href="#"><img class="opskriftkortpic mobil" src="media/MOpskriftKarry.jpg" alt="Yakisoba"></a>
+                <div class="opskriftteaser">
+                    <h3>Kare Raisu</h3>
+                    <p>Japansk karryret med ris og godt oksekød. Kødet kan erstattes af svin eller fars,hvis du ønsker en mere børne venlig udgave</p>
+                        
+                    <div class="sværhedsgrad">
+                        <img class="indikator" src="media/okse.png" alt="okseikon">
+                        <img class="indikator" src="media/svin.png" alt="svineikon">
+                    </div>
+                        
+                    <p>Sværhedsgrad:</p>
+            
+                    <div class="sværhedsgrad">
+                        <img class="indikator" src="media/broccoligrøn.png">
+                        <img class="indikator" src="media/broccoligrøn.png">
+                        <img class="indikator" src="media/broccoligrøn.png">
+                        <img class="indikator" src="media/broccolish.png">
+                        <img class="indikator" src="media/broccolish.png">
+                    </div>
+                    <a class="abonnement knapwidth" href="#">Se opskrift</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
 </html>
