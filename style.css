@@ -20,9 +20,15 @@ h1 {
   font-size: 50px;
   color: #650909;
   text-align: center;
+  margin-bottom: 10px;
+}
+#underoverskrift{
+  display: flex;
+  height: 16px;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 50px;
 }
-
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -504,16 +510,11 @@ strong {
     height: auto;
     margin: auto;
 }
-#underoverskrift{
-    display: flex;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-}
 .streg{
     background-color: black;
     min-height: 2px;
     width: 10%;
+    margin-top: 25px;
 }
 #underp{
     margin-left: 1%;
@@ -553,24 +554,17 @@ strong {
 .opskriftteaser h3{
   margin-bottom: 20px;
 }
-.opskriftteaser p{
-  margin-bottom: 30px;
-}
+
 .opskriftkortpic{
     border-radius: 15px;
     width: 100%;
     height: auto;
 }
-.sværhedsindikator{
-  width: 100%;
-  justify-content: space-evenly;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .indikator{
   width: 10%;
   height: auto;
 }
+
 #enokiMH{
   margin-top: 10vh;
   margin-left: 80%;
@@ -596,7 +590,14 @@ strong {
   text-align: center;
   align-items: center;
 }
-
+.arbejdstid{
+  display: flex;
+  align-items: center;
+}
+.indikatortid{
+  width: 8%;
+  margin-right: 10px;
+}
 /*------------------------riskulger--------------------------*/
 #sushikuglekort{
   width: 50%;
@@ -641,6 +642,36 @@ strong {
   text-align: left;
   padding-left: 20px;
 }
+#sushiopskrift{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 15px;
+  padding: 80px;
+  background-color: white;
+}
+.voksenlayout{
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+.voksenlayout p{
+  margin-left: 40px;
+}
+.tal{
+  font-size: 100px;
+  margin-right: 20px;
+}
+.børnelayout{
+  display: flex;
+  margin-top: 75px;
+}
+.børnetekst{
+  margin-left: 40px;
+}
+.børnetekst h3{
+  margin-bottom: 30px;
+}
 /*--------------------------404---------------------*/
 #fejl404{
   width: 30%;
@@ -671,6 +702,9 @@ strong {
 }
 .marginbottom400{
   margin-bottom: 70px;
+}
+.margintop30{
+  margin-top: 30px;
 }
 .posabs{
   position: absolute;
@@ -883,6 +917,32 @@ strong {
  #blurcontainer{
   margin-top: 700px;
  }
+
+/*------------------riskugler------------------------------*/
+
+#sushikuglepic{
+  width: 100%;
+  margin-top: 0px;
+}
+#ingredienser{
+  width: 100%;
+  border-right: none;
+  text-align: center;
+ 
+}
+#sushioplysninger{
+  width: 100%;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#sushilister{
+  flex-direction: column-reverse;
+}
+
 /*-----------------404-----------------------------------------*/
 #fejl404{
   width: 50%;
