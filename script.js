@@ -39,7 +39,7 @@ function tilfoejTilKurv(){
 
 }
         let yakisobaamount = sessionStorage.getItem("yakisoba");
-        document.getElementById("demo").innerHTML = yakisobaamount;
+//        document.getElementById("demo").innerHTML = yakisobaamount;
 
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 nav.classList.toggle("nav-active"); 
