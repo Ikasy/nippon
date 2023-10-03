@@ -456,12 +456,11 @@ input[type=number] {
 }
 
 .logoom {
-  max-width: 420px;
-  max-height: 380px;
-  width: 100%;
+  width: 30%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 30px;
+  
   
 }
 
