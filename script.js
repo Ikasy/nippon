@@ -7,16 +7,32 @@ const sushi = document.getElementById("sushinrretter")
 const personer = document.getElementById("person")
 const ikurv = document.getElementById("ikurv")
 
-let item = [];
-let price = [];
+// let item = [];
+// let price = [];
 
-let showItem = "";
-let showPrice = 0;
+// let showItem = "";
+// let showPrice = 0;
 
-// ikurv.onclick = tilfoejTilListe;
+// ikurv.onclick = tilfoejTilKurv;
 
-// function tilfoejTilListe(){
-//     if (yakisoba){
+// function tilfoejTilKurv(){
+
+//     let karryinput = parseFloat(karry.value);
+//     let yakisobainput = parseFloat(yakisoba.value);
+//     let sushiinput = parseFloat(sushi.value);
+//     let person = parseFloat(sushi.value);
+
+//     if (yakisobainput > 0){
+//         item.push("Yakisoba");
+//     }   
+
+//     if (karryinput > 0){
+//         item.push("Japansk Karry");
+        
+//     }
+
+//     if (sushiinput > 0){
+//         item.push("Sushi Kugler");
 
 //     }
 
