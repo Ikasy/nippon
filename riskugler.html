@@ -5,10 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>RISKUGLER</title>
+    <title>OPSKRIFTER</title>
     <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+            
+            <ul class="nav-links"> 
+                
+                <a href="opskrifter.html">Opskrifter</a> 
+                <a href="maltidskasser.html">Måltidskasser</a>
     
+                <div class="menu-dropdown" onclick = "openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                        <div class="dropdown-list" id="omlist">
+                            <div>
+                                <a id="droptop" href="omos.html">Om os</a>
+                            </div>
+                            <div>
+                                <a href="omjapanmad.html">Om Japansk Mad</a>
+                            </div>
+                        </div>
+                </div>
+    
+                <div id="headericons">
+                    <a href="kurv.html"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #000000;"></i></a>
+                    <a href="profil.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                </div>
+            </ul>
+            
+    
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="pladstilheader">sushikugler</h1>
+        <div id="underoverskrift">
+            <div class="streg"></div>
+            <p id="underp">OPSKRIFTER</p>
+            <div class="streg"></div>
+        </div>
+        <div id="sushibaggrund">
+            <div id="sushikuglekort">
+                <img class="laptop" id="sushikuglepic" src="media/LOpskriftSushi.jpg" alt="sushikugler">
+                <img class="mobil" id="sushikuglepic" src="media/LOpskriftSushi.jpg" alt="sushikugler">
+                <p>Sushikulger er en nemmere udgave af almindelig sushi, <br>
+                    du kan dekorere med forskelligt frugt og grønt eller fisk</p>
+                <div id="sushilister">
+                    <div id="ingredienser">
+                        <h3>Ingredienser</h3>
+                        <p>
+                            <br>
+                            3 dl sushiris<br>
+                            2 spsk sukker <br>
+                            1/5 dl risvineddike
+                            200g optøet laks<br>
+                            100g rejer<br>
+                            2 avokadoer<br>
+                            1 mango<br>
+                            1 agurk<br>
+                            evt sesam til pynt<br>
+                            soya
+                        </p>
+                    </div>
+                    <div id="sushioplysninger">
+                        <h3>Oplysninger</h3>
+                        <p>
+                            <br>
+                            Arbejdestid:<br>
+                            Antal personer:<br>
+                            Sværhedsgrad:<br>
+                            <div class="sværhedsgrad">
+                                <img class="indikator" src="media/okse.png" alt="laks">
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </main>
 </body>
-</html>

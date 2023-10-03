@@ -496,7 +496,7 @@ strong {
 /*----------------------------Opskrifter-------------------------*/
 .opskriftcontainer{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .opskrifttekst{
     position: absolute;
@@ -598,6 +598,58 @@ strong {
   align-items: center;
 }
 
+/*------------------------riskulger--------------------------*/
+#sushikuglekort{
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  text-align: center;
+}
+#sushibaggrund{
+  background-image: url(media/sushibaggrund.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position-x: right;
+}
+#sushikuglepic{
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+#sushilister{
+  margin-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+}
+#ingredienser{
+  width: 50%;
+  height: auto;
+  text-align: right;
+  border-right: 2px solid black;
+  padding-right: 20px;
+}
+#sushioplysninger{
+  width: 50%;
+  height: auto;
+  text-align: left;
+  padding-left: 20px;
+}
+/*--------------------------404---------------------*/
+#fejl404{
+  width: 30%;
+  height: auto;
+  margin-left: 35%;
+  margin-top: 10vh;
+}
+
 /*---------------------------Add ons-----------------------------*/
 .laptop{
     display: block;
@@ -617,6 +669,9 @@ strong {
 }
 .marginbottom100{
   margin-bottom: 100px;
+}
+.marginbottom400{
+  margin-bottom: 70px;
 }
 .posabs{
   position: absolute;
@@ -826,6 +881,18 @@ strong {
   width: 30%;
   margin-left: 70%;
  }
+ #blurcontainer{
+  margin-top: 700px;
+ }
+/*-----------------404-----------------------------------------*/
+#fejl404{
+  width: 50%;
+  margin-left: 25%;
+}
+#logpåNÅ{
+  width: 50%;
+  margin-left: 20%;
+}
 /*---------------------------Add ons-----------------------------*/
     .laptop{
         display: none;
@@ -836,6 +903,12 @@ strong {
 
     .posabs{
       margin-left: 10%;
+    }
+    .margintop{
+      margin-top: 100px;
+    }
+    .marginbottom400{
+      margin-bottom: 400px;
     }
 
 }
