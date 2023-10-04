@@ -758,7 +758,7 @@ strong {
   height: 600px;
   width: 500px;
   background-color: white;
-  box-shadow: 8px 8px 20px rgb(128, 128, 128);
+  box-shadow: 4px 8px 20px rgb(200, 200, 200);
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -773,16 +773,18 @@ strong {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .login,
 .signup {
-  font-size: 22px;
+  font-size: 18px;
   border: none;
   outline: none;
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  
 }
 
 .slider {
