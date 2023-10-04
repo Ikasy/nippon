@@ -504,7 +504,7 @@ input[type=number] {
   text-align: left;
   margin-left: 22%;
   margin-right: 22%;
-  
+
 }
 
 .indholdom-box {
@@ -899,6 +899,47 @@ strong {
   filter: blur(10px);
 }
 
+/*---------------------------- footer----------------------------*/
+
+
+.footer {
+  background: green;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.footer .række {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: black;
+}
+
+.footer .række a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer .række a:hover {
+  color: #fff;
+}
+
+.footer .række ul {
+  width: 100%;
+}
+
+.footer .række ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .række a i {
+  font-size: 40px;
+  margin: 0% 1%;
+}
+
+
 /*---------------------------- Mobil ----------------------------*/
 
 @media only screen and (max-width: 900px) {
@@ -1238,7 +1279,28 @@ strong {
     font-size: 19px;
   }
 
-} /*der er rod i klammerne, skal den her ned under KeyFrames?????*/
+  /*---------------------------- Footer ----------------------------*/
+
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footer .række ul li {
+    display: block;
+    margin: 10px 0px;
+  }
+
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+
+
+
+
+}
+
+/*der er rod i klammerne, skal den her ned under KeyFrames?????, Jakob: nej tror det er rigitgt nok den hører med til media query */
 
 
 @keyframes navLinkFade {
