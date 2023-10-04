@@ -68,16 +68,19 @@ function openDropdown(){
         omlist.style.display = "block";
     }
 }
+// login og signup siden
 
-let drypris = document.getElementById("drypris");
-drypris.style.display = "none";
-drypris.addEventListener("click", visBørnEt)
+let signup = document.querySelector(".signup");
+let login = document.querySelector(".login");
+let slider = document.querySelector(".slider");
+let formSection = document.querySelector(".form-section");
 
-function openBørnEt(){
-    if (drypris.style.display != "none"){
-        drypris.style.display = "none"
-    } else {
-        drypris.style.display = "block";
-    }
-}
-drypris.onclick = openBørnEt
+signup.addEventListener("click", () => {
+	slider.classList.add("moveslider");
+	formSection.classList.add("form-section-move");
+});
+
+login.addEventListener("click", () => {
+	slider.classList.remove("moveslider");
+	formSection.classList.remove("form-section-move");
+});
