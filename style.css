@@ -502,6 +502,7 @@ strong {
 .opskriftcontainer{
     width: 100%;
     height: 100%;
+    margin-bottom: 100px;
 }
 .opskrifttekst{
     position: absolute;
@@ -566,15 +567,18 @@ strong {
 }
 
 #enokiMH{
-  margin-top: 10vh;
-  margin-left: 80%;
-  width: 20%;
-  margin-bottom: 200px;
+  background-image: url(media/OpskrifterEnokiMH.png);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
 #enokiMV{
-  width: 40%;
-  margin-right: 60%;
+  background-image: url(media/OpskrifterEnokiMV.png);
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position-x: 0px;  
 }
+
 #logpåNÅ{
   width: 40%;
   height: auto;
@@ -653,7 +657,13 @@ strong {
 .voksenlayout{
   display: flex;
   width: 100%;
-  border-bottom: 2px solid black;
+}
+.kuglestreg{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 .voksenlayout p{
   margin-left: 40px;
@@ -700,15 +710,8 @@ strong {
 .marginbottom100{
   margin-bottom: 100px;
 }
-.marginbottom400{
-  margin-bottom: 70px;
-}
 .margintop30{
   margin-top: 30px;
-}
-.posabs{
-  position: absolute;
-  margin-left: 13%;
 }
 .blur{
   filter: blur(10px);
@@ -911,12 +914,12 @@ strong {
   max-width: 40%;
  }
  #enokiMH{
-  width: 30%;
-  margin-left: 70%;
+  background-size: 40%;
  }
- #blurcontainer{
-  margin-top: 700px;
+ #enokiMV{
+  background-size: 50%;
  }
+
 
 /*------------------riskugler------------------------------*/
 
