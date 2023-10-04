@@ -7,37 +7,39 @@ const sushi = document.getElementById("sushinrretter")
 const personer = document.getElementById("person")
 const ikurv = document.getElementById("ikurv")
 
-// let item = [];
-// let price = [];
+let item = [];
+let price = [];
 
-// let showItem = "";
-// let showPrice = 0;
+let showItem = "";
+let showPrice = 0;
 
-// ikurv.onclick = tilfoejTilKurv;
+function tilfoejTilKurv(){
 
-// function tilfoejTilKurv(){
+    let karryinput = parseFloat(karry.value);
+    let yakisobainput = parseFloat(yakisoba.value);
+    let sushiinput = parseFloat(sushi.value);
+    let person = parseFloat(sushi.value);
 
-//     let karryinput = parseFloat(karry.value);
-//     let yakisobainput = parseFloat(yakisoba.value);
-//     let sushiinput = parseFloat(sushi.value);
-//     let person = parseFloat(sushi.value);
-
-//     if (yakisobainput > 0){
-//         item.push("Yakisoba");
-//     }   
-
-//     if (karryinput > 0){
-//         item.push("Japansk Karry");
+    if (yakisobainput > 0){
+        item.push("Yakisoba");
+        console.log("0");
+        sessionStorage.setItem("yakisoba", yakisobainput);
         
-//     }
+    }   
 
-//     if (sushiinput > 0){
-//         item.push("Sushi Kugler");
+    if (karryinput > 0){
+        item.push("Japansk Karry");
+        
+    }
 
-//     }
+    if (sushiinput > 0){
+        item.push("Sushi Kugler");
 
-// }
+    }
 
+}
+        let yakisobaamount = sessionStorage.getItem("yakisoba");
+//        document.getElementById("demo").innerHTML = yakisobaamount;
 
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 nav.classList.toggle("nav-active"); 
