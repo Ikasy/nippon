@@ -774,13 +774,15 @@ strong {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: lightgreen;
   
 }
 
 .login,
 .signup {
-  font-size: 18px;
+  font-size: 15px;
   border: none;
+  color: #fff;
   outline: none;
   background-color: transparent;
   position: relative;
@@ -853,6 +855,7 @@ strong {
   width: 150px;
   border-radius: 50px;
   background-color: green;
+  color: white;
   font-size: 22px;
   border: none;
   cursor: pointer;
@@ -915,17 +918,17 @@ strong {
   width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
-  color: black;
+  color: white;
 }
 
 .footer .række a {
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.5s;
 }
 
 .footer .række a:hover {
-  color: #fff;
+  color:black;
 }
 
 .footer .række ul {
