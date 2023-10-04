@@ -158,19 +158,19 @@
             <div class="voksenlayout">
                     <h3 class="tal">1</h3>
                     <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.</p>
-                    <div class="videoknap">Jeg kan selv:</div>
+                    <div class="videoknap" onclick="toggleDrypRis();">Jeg kan selv:</div>
             </div>
 
             <div class="børnelayout" id="drypris">
                 <div class="video">
-                    <video muted autoplay width="100%" heigth="100%">
+                    <video muted autoplay width="100%" heigth="100%" id="demoVideo">
                         <source src="media/Lsushisukker.mp4">
                     </video>
                 </div>
                 <div class="børnetekst">
                     <h3>Jeg kan selv:</h3>
                     <p>røre sukker og eddike sammen i en skål. Dryppe det på de kølede ris</p>
-                        <div class="videoknap">Se video</div>
+                        <div class="videoknap" onclick="toggleVideo('demoVideo')">Se video</div>
                 </div>
             </div>
         

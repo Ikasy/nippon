@@ -6,6 +6,7 @@ const karry = document.getElementById("karrynrretter")
 const sushi = document.getElementById("sushinrretter")
 const personer = document.getElementById("person")
 const ikurv = document.getElementById("ikurv")
+const drypRisDiv = document.getElementById("drypris")
 
 let item = [];
 let price = [];
@@ -54,16 +55,32 @@ nav.classList.toggle("nav-active");
     burger.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
 });
 
+function toggleDrypRis() {
+    if(drypRisDiv.style.display === "none") {
+        drypRisDiv.style.display = "block";
+    } else {
+        drypRisDiv.style.display = "none";
+    }
+}
 
-
-
+function toggleVideo(videoId) {
+    const video = document.getElementById(videoId);
+    console.log(videoId);
+    const isVideoPlaying = !video.paused; 
+    console.log(isVideoPlaying);
+    if(isVideoPlaying) {
+        video.pause();
+    } else {
+        video.play();
+    }
+}
 
 let omlist = document.getElementById("omlist");
 omlist.style.display = "none";
 
 function openDropdown(){
     if (omlist.style.display != "none"){
-        omlist.style.display = "none"
+        omlist.style.display = "none";
     } else {
         omlist.style.display = "block";
     }
