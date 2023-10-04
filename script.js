@@ -68,3 +68,16 @@ function openDropdown(){
         omlist.style.display = "block";
     }
 }
+
+let drypris = document.getElementById("drypris");
+drypris.style.display = "none";
+drypris.addEventListener("click", visBørnEt)
+
+function openBørnEt(){
+    if (drypris.style.display != "none"){
+        drypris.style.display = "none"
+    } else {
+        drypris.style.display = "block";
+    }
+}
+drypris.onclick = openBørnEt

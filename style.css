@@ -334,6 +334,7 @@ nav {
   padding: 10px 20px;
   background-color: #1e6904;
   color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
   margin-top: 25px;
 }
 .abonnement:hover{
@@ -458,7 +459,11 @@ input[type=number] {
 .logoomcontainer {
   text-align: center;
   margin-top: 10%;
-  margin-bottom: 1000px;
+  padding-bottom: 400px;
+  background-image: url(media/rødkål.png);
+  background-size: 100%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
 }
 
 .logoom {
@@ -475,14 +480,13 @@ input[type=number] {
   text-align: left;
   margin-left: 22%;
   margin-right: 22%;
-
+  
 }
 
 .indholdom-box {
   background-color: white;
   padding: 5% 10%;
   border-radius: 20px;
-
 }
 
 
@@ -666,11 +670,23 @@ strong {
   margin-bottom: 50px;
 }
 .voksenlayout p{
-  margin-left: 40px;
+  width: 40%;
+  margin-left: 30px;
+  margin-right: 40px;
 }
 .tal{
   font-size: 100px;
   margin-right: 20px;
+}
+.videoknap{
+  border-radius: 50px;
+  background-color: #1e6904;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 25px;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  height: 25px;
+  text-align: center;
 }
 .børnelayout{
   display: flex;
@@ -945,6 +961,22 @@ strong {
 #sushilister{
   flex-direction: column-reverse;
 }
+.voksenlayout{
+  flex-direction: column;
+}
+.voksenlayout p{
+  width: 80%;
+}
+.videoknap{
+  width: 30%;
+}
+.børnelayout{
+  flex-direction: column-reverse;
+}
+.børnetekst{
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
 
 /*-----------------404-----------------------------------------*/
 #fejl404{
@@ -973,7 +1005,7 @@ strong {
       margin-bottom: 400px;
     }
 
-}
+} /*der er rod i klammerne, skal den her ned under KeyFrames?????*/
 
 
 @keyframes navLinkFade {
