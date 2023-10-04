@@ -12,6 +12,7 @@
 
 body {
   background-color: #F4F5F0;
+  overflow-x: hidden;
 
 }
 
@@ -824,7 +825,7 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 40px;
+  padding: 0px 35px;
 }
 
 .login-box {
@@ -1260,7 +1261,7 @@ strong {
   }
 
   .form-section-move {
-    left: -375px;
+    left: -350px;
   }
 
   .login-box,
