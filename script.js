@@ -6,6 +6,8 @@ const karry = document.getElementById("karrynrretter")
 const sushi = document.getElementById("sushinrretter")
 const personer = document.getElementById("person")
 const ikurv = document.getElementById("ikurv")
+const tomKurv = document.getElementById("tomkurv")
+const fuldKurv = document.getElementById("kurv")
 
 let item = [];
 let price = [];
@@ -19,28 +21,45 @@ function tilfoejTilKurv(){
     let yakisobainput = parseFloat(yakisoba.value);
     let sushiinput = parseFloat(sushi.value);
     let person = parseFloat(sushi.value);
+    let kurvcheck;
 
     if (yakisobainput > 0){
         item.push("Yakisoba");
-        console.log("0");
         sessionStorage.setItem("yakisoba", yakisobainput);
-        
+        kurvcheck = true;
     }   
 
     if (karryinput > 0){
         item.push("Japansk Karry");
-        
+        sessionStorage.setItem("karry", karryinput);
+        kurvcheck = true;
     }
 
     if (sushiinput > 0){
         item.push("Sushi Kugler");
+        sessionStorage.setItem("sushi", sushiinput);
+        kurvcheck = true;
 
     }
-
+    return kurvcheck;
 }
-        let yakisobaamount = sessionStorage.getItem("yakisoba");
-//        document.getElementById("demo").innerHTML = yakisobaamount;
+// console.log(kurvcheck)
+if (fuldKurv !== null || tomKurv !== null ){
+    if (kurvcheck === null || kurvcheck === false ){
+        tomKurv.style.display = "block"
+        fuldKurv.style.display = "none"
+    } else {
+        fuldKurv.style.display = "block"
+        tomKurv.style.display = "none"
+        
+        }
+}
 
+if ( document.getElementById("demo") !== null){
+    let yakisobaamount = sessionStorage.getItem("yakisoba");
+    document.getElementById("demo").innerHTML = yakisobaamount;
+}
+    
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 nav.classList.toggle("nav-active"); 
     navLinks.forEach((link, index) => {  /* gennemløb af alle elementer med class'en nav-links */ 
