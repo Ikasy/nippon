@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
 @font-face {
   font-family: japanese;
   src: url(media/Almost\ Japanese\ Comic.ttf);
@@ -22,13 +23,15 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
-#underoverskrift{
+
+#underoverskrift {
   display: flex;
   height: 16px;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -47,7 +50,7 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  
+
 }
 
 a {
@@ -71,9 +74,11 @@ header {
   filter: drop-shadow(0px 10px 10px #00000020);
   z-index: 100;
 }
-#pladstilheader{
+
+#pladstilheader {
   margin-top: 165px;
 }
+
 .logo {
   width: 100px;
 }
@@ -147,134 +152,138 @@ nav {
 /*-----------------------------Forside-----------------------------------*/
 
 :root {
-    --secondary-color: #fdf5f5;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    z-index: -10;
-    background-image: url(media/savoybaggrund.jpg);
-    
-  }
-  
-  .container {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    margin-top: 18vh;
-    height: 75vh;
-    border: 1px solid #1e6904;
-    border-radius: 15px;
-    justify-content: space-between;
-    gap: inherit;
-    align-items: center;
-    color: #fff;
-    animation: expand .8s ease forwards;
-    background-color: var(--secondary-color);
-    position: relative;
-    transition: all .8s ease;
-  }
-  
-  .container_content {
-   width: 50%;
-  }
-  
-  .container_content_inner {
-    max-width: 80%;
-    margin-left: 10%;
+  --secondary-color: #fdf5f5;
+}
 
-  }
-  
-  .container_outer_img {
-    width: 80%;
-    height: auto;
-    overflow: hidden;
-    
-  }   
-      
-  .container_img {
-    width: 100%;
-    animation: slideIn 1.5s ease-in-out forwards;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-image: url(media/savoybaggrund.jpg);
 
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 18vh;
+  height: 75vh;
+  border: 1px solid #1e6904;
+  border-radius: 15px;
+  justify-content: space-between;
+  gap: inherit;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  transition: all .8s ease;
+}
+
+.container_content {
+  width: 50%;
+}
+
+.container_content_inner {
+  max-width: 80%;
+  margin-left: 10%;
+
+}
+
+.container_outer_img {
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+.indexp {
+  line-height: 28px;
+  color: black;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 2px solid #1e6904;
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+.indexh1 {
+  margin-bottom: 20px;
+  font-size: 50pt;
+  text-align: left;
+  transform: translateY(100px);
+  animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
   }
-  
-  .par {
-    height: auto;
-    overflow: hidden;
+
+  100% {
+    transform: translateX(0px) scale(1);
   }
-  
-  .indexp{
-    line-height: 28px;
-    color: black;
+}
+
+@keyframes slideUp {
+  0% {
     transform: translateY(300px);
-    animation: slideUp .8s ease-in-out forwards .8s;
   }
-  
-  .btns {
-    height: 100%;
-    position: relative;
-    width: 150px;
-    overflow: hidden;
+
+  100% {
+    transform: translateY(0px);
   }
-  
-  .btns_more {
-    background: transparent;
-    border: 2px solid #1e6904;
-    border-radius: 50px;
-    padding: 8px 12px;
-    color: black;
-    font-size: 16px;
-    text-transform: uppercase;
-    position: relative;
-    margin-top: 15px;
-    outline: none;
-    transform: translateY(50px);
-    animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
   }
-  
-  .title {
-    overflow: hidden;
-    height: auto;
+
+  100% {
+    transform: translateX(0px);
   }
-  
-  .indexh1 {
-      margin-bottom: 20px;
-      font-size: 50pt;
-      text-align: left;
-      transform: translateY(100px);
-      animation: slideUp .8s ease forwards .5s;
-  }
-  
-  @keyframes slideIn {
-    0% {
-      transform: translateX(500px) scale(.2);
-    }
-    100% {
-      transform: translateX(0px) scale(1);
-    }
-  }
-  
-  @keyframes slideUp {
-    0% {
-      transform: translateY(300px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  
-  @keyframes expand {
-    0% {
-      transform: translateX(1400px);
-    }
-    100% {
-      transform: translateX(0px);
-    }
-  }
+}
 
 
 /*---------------------------- Måltidskasser ----------------------------*/
@@ -282,7 +291,8 @@ nav {
 .border {
   border-right: black 2px solid;
 }
-.border:last-child{
+
+.border:last-child {
   border: none;
 }
 
@@ -326,9 +336,11 @@ nav {
   padding: 10px 20px;
   margin-top: 25px;
 }
-.enkøb:hover{
+
+.enkøb:hover {
   background-color: #e7f7eb;
 }
+
 .abonnement {
   border-radius: 50px;
   padding: 10px 20px;
@@ -336,12 +348,15 @@ nav {
   color: #FFFFFF;
   margin-top: 25px;
 }
-.abonnement:hover{
-  background-color: #193d0d; /*yay or nay???*/
+
+.abonnement:hover {
+  background-color: #193d0d;
+  /*yay or nay???*/
 }
+
 /*---------------------------- Bestil børnekasse ----------------------------*/
 
-#kassecontainer{
+#kassecontainer {
   filter: drop-shadow(0px 10px 10px #e2e2e2);
   width: 70%;
   margin: auto;
@@ -352,24 +367,28 @@ nav {
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
-  
+
 }
-#retoverskrift{
+
+#retoverskrift {
   width: 80%;
   margin: 25px auto;
 }
-#kasseimg{
+
+#kasseimg {
   width: 30%;
   margin: auto;
 }
-#personer{
+
+#personer {
   width: 80%;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
 }
-#retter{
+
+#retter {
   border: black 2px solid;
   border-radius: 10px;
   width: 80%;
@@ -377,9 +396,10 @@ nav {
   margin: auto;
   padding: 25px;
   box-sizing: border-box;
-  overflow:auto;
+  overflow: auto;
 }
-#retter section{
+
+#retter section {
   margin: 0;
   margin-bottom: 25px;
   width: 100%;
@@ -387,13 +407,15 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-#retter section div{
+
+#retter section div {
   display: flex;
   align-items: center;
 
   margin: 0;
 }
-#retter section img{
+
+#retter section img {
   width: 50%;
   margin-right: 10px;
 }
@@ -424,7 +446,7 @@ input[type=button]:hover {
 input[type=number] {
   width: 100px;
   height: 25px;
-  
+
   cursor: pointer;
 
   font-family: 'Raleway', sans-serif;
@@ -437,17 +459,19 @@ input[type=number] {
 
 /*---------------------------- Scrollbar ----------------------------*/
 /* scrollbar. */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   border-radius: 50px;
 }
+
 /* the draggable scrolling handle. */
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #1e6904;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
   background-color: #0f3203;
 }
 
@@ -466,8 +490,8 @@ input[type=number] {
   height: auto;
   border-radius: 10px;
   margin-bottom: 30px;
-  
-  
+
+
 }
 
 .indholdom {
@@ -499,87 +523,98 @@ strong {
 }
 
 /*----------------------------Opskrifter-------------------------*/
-.opskriftcontainer{
-    width: 100%;
-    height: 100%;
-    margin-bottom: 100px;
+.opskriftcontainer {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
 }
-.opskrifttekst{
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: auto;
-    margin: auto;
+
+.opskrifttekst {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
-.streg{
-    background-color: black;
-    min-height: 2px;
-    width: 10%;
-    margin-top: 25px;
+
+.streg {
+  background-color: black;
+  min-height: 2px;
+  width: 10%;
+  margin-top: 25px;
 }
-#underp{
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 30px;
+
+#underp {
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 30px;
 }
-.opskriftbaggrund{
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    gap: inherit;
+
+.opskriftbaggrund {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: inherit;
 }
-#enokiTV{
-    width: 30%;
+
+#enokiTV {
+  width: 30%;
 }
-#enokiTH{
-    width: 20%;
-    height: auto;
+
+#enokiTH {
+  width: 20%;
+  height: auto;
 }
-.opskriftkort{
-    width: 70%;
-    display: flex;
-    margin: auto;
-    height: auto;
-    background-color: white;
-    border-radius: 15px;
-    filter: drop-shadow(0px 10px 10px #e2e2e2);
-    justify-content: space-between;
-    padding: 30px;
-    z-index: 2;
+
+.opskriftkort {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  justify-content: space-between;
+  padding: 30px;
+  z-index: 2;
 }
-.opskriftteaser{
+
+.opskriftteaser {
   width: 40%;
-   display: flex;
-   flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-.opskriftteaser h3{
+
+.opskriftteaser h3 {
   margin-bottom: 20px;
 }
 
-.opskriftkortpic{
-    border-radius: 15px;
-    width: 100%;
-    height: auto;
+.opskriftkortpic {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
 }
-.indikator{
+
+.indikator {
   width: 10%;
   height: auto;
 }
 
-#enokiMH{
+#enokiMH {
   background-image: url(media/OpskrifterEnokiMH.png);
   background-size: 25%;
   background-repeat: no-repeat;
   background-position-x: right;
 }
-#enokiMV{
+
+#enokiMV {
   background-image: url(media/OpskrifterEnokiMV.png);
   background-size: 35%;
   background-repeat: no-repeat;
-  background-position-x: 0px;  
+  background-position-x: 0px;
 }
 
-#logpåNÅ{
+#logpåNÅ {
   width: 40%;
   height: auto;
   padding: 40px;
@@ -594,16 +629,19 @@ strong {
   text-align: center;
   align-items: center;
 }
-.arbejdstid{
+
+.arbejdstid {
   display: flex;
   align-items: center;
 }
-.indikatortid{
+
+.indikatortid {
   width: 8%;
   margin-right: 10px;
 }
+
 /*------------------------riskulger--------------------------*/
-#sushikuglekort{
+#sushikuglekort {
   width: 50%;
   height: auto;
   margin: auto;
@@ -614,13 +652,15 @@ strong {
   filter: drop-shadow(0px 10px 10px #e2e2e2);
   text-align: center;
 }
-#sushibaggrund{
+
+#sushibaggrund {
   background-image: url(media/sushibaggrund.png);
   background-repeat: no-repeat;
   background-size: 40%;
   background-position-x: right;
 }
-#sushikuglepic{
+
+#sushikuglepic {
   width: 70%;
   height: auto;
   margin: auto;
@@ -628,25 +668,29 @@ strong {
   margin-bottom: 50px;
   border-radius: 15px;
 }
-#sushilister{
+
+#sushilister {
   margin-top: 75px;
   padding-bottom: 75px;
   display: flex;
 }
-#ingredienser{
+
+#ingredienser {
   width: 50%;
   height: auto;
   text-align: right;
   border-right: 2px solid black;
   padding-right: 20px;
 }
-#sushioplysninger{
+
+#sushioplysninger {
   width: 50%;
   height: auto;
   text-align: left;
   padding-left: 20px;
 }
-#sushiopskrift{
+
+#sushiopskrift {
   width: 70%;
   margin: auto;
   margin-top: 100px;
@@ -654,36 +698,163 @@ strong {
   padding: 80px;
   background-color: white;
 }
-.voksenlayout{
+
+.voksenlayout {
   display: flex;
   width: 100%;
 }
-.kuglestreg{
+
+.kuglestreg {
   width: 100%;
   height: 2px;
   background-color: black;
   margin-top: 90px;
   margin-bottom: 50px;
 }
-.voksenlayout p{
+
+.voksenlayout p {
   margin-left: 40px;
 }
-.tal{
+
+.tal {
   font-size: 100px;
   margin-right: 20px;
 }
-.børnelayout{
+
+.børnelayout {
   display: flex;
   margin-top: 75px;
 }
-.børnetekst{
+
+.børnetekst {
   margin-left: 40px;
 }
-.børnetekst h3{
+
+.børnetekst h3 {
   margin-bottom: 30px;
 }
+
+/*---------------------------- Login/Signup ----------------------------*/
+
+
+.loginsignincontrol {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+
+/* her kan vi ændre boksen design som login og signin formulering ligger inden i */
+.rammepåloginogsigninformularen {
+  height: 600px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 8px 8px 20px rgb(128, 128, 128);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.btn {
+  height: 30px;
+  width: 300px;
+  margin: 40px auto;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login,
+.signup {
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  height: 30px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: green;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+.moveslider {
+  left: 250px;
+}
+
+.form-section {
+  height: 500px;
+  width: 1000px;
+  padding: 20px 0;
+  display: flex;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  left: 0px;
+}
+
+.form-section-move {
+  left: -500px;
+}
+
+.login-box,
+.signup-box {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 40px;
+}
+
+.login-box {
+  gap: 50px;
+}
+
+.signup-box {
+  gap: 30px;
+}
+
+.ele {
+  height: 60px;
+  width: 400px;
+  outline: none;
+  border: none;
+  color: rgb(77, 77, 77);
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.knapbund {
+  height: 60px;
+  width: 150px;
+  border-radius: 50px;
+  background-color: green;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
 /*--------------------------404---------------------*/
-#fejl404{
+#fejl404 {
   width: 30%;
   height: auto;
   margin-left: 35%;
@@ -691,31 +862,39 @@ strong {
 }
 
 /*---------------------------Add ons-----------------------------*/
-.laptop{
-    display: block;
+.laptop {
+  display: block;
 }
-.mobil{
-    display: none;
+
+.mobil {
+  display: none;
 }
-.zoom{
-  transition: transform .3s; 
+
+.zoom {
+  transition: transform .3s;
 }
+
 .zoom:hover {
-  transform: scale(1.02); 
+  transform: scale(1.02);
 }
-.knapwidth{
+
+.knapwidth {
   width: inherit;
   padding-left: 20px;
 }
-.marginbottom100{
+
+.marginbottom100 {
   margin-bottom: 100px;
 }
-.margintop30{
+
+.margintop30 {
   margin-top: 30px;
 }
-.blur{
+
+.blur {
   filter: blur(10px);
 }
+
 /*---------------------------- Mobil ----------------------------*/
 
 @media only screen and (max-width: 900px) {
@@ -771,22 +950,26 @@ strong {
 
   /*-----------------------------Forside----------------------------------*/
 
-  .container{
+  .container {
     flex-direction: column;
     justify-content: start;
-}
-.container_outer_img{
+  }
+
+  .container_outer_img {
     width: 95%;
     margin-left: 5%;
-}
-.container_content{
+  }
+
+  .container_content {
     width: 90%;
     margin-bottom: 10%;
-}
-.indexh1{
+  }
+
+  .indexh1 {
     font-size: 60pt;
-}
-/*.overlay{
+  }
+
+  /*.overlay{
     background-image: url(media/Lgul-grøn-højre.jpg); <---skal ændres til en mobil baggrund!!
 }*/
   /*---------------------------- Måltidskasser----------------------------*/
@@ -794,7 +977,9 @@ strong {
   .border {
     border-right: none;
     border-bottom: black 2px solid;
-  }.border:last-child{
+  }
+
+  .border:last-child {
     border-bottom: black 2px solid;
   }
 
@@ -819,7 +1004,7 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
 
     padding: 5%;
     background-color: #FFFFFF;
@@ -843,43 +1028,48 @@ strong {
 
   /*---------------------------- Bestilling af kasse ----------------------------*/
 
-  #kassecontainer{
+  #kassecontainer {
     width: 90%;
-    
+
   }
 
-  #retoverskrift{
+  #retoverskrift {
     width: 90%;
   }
-  #personer{
+
+  #personer {
     width: 90%;
   }
-  #retter{
+
+  #retter {
     width: 90%;
     padding: 10px;
 
   }
 
-  #retter section h3{
+  #retter section h3 {
     font-size: 14px;
   }
 
   input[type=number] {
     width: 85px;
     height: 25px;
-  
+
   }
-  #kassecontainer h1{
+
+  #kassecontainer h1 {
     font-size: 40px;
   }
-  #kassecontainer h2{
+
+  #kassecontainer h2 {
     font-size: 20px;
   }
 
-  #retter section div{
+  #retter section div {
     flex-direction: column;
-    align-items:start;
+    align-items: start;
   }
+
   /*---------------------------- OM OS ----------------------------*/
 
 
@@ -896,82 +1086,153 @@ strong {
   .indholdom-box {
     padding: 5% 5%;
   }
+
   /*-------------------------Opskrifter---------------------------*/
-  .opskriftkort{
+  .opskriftkort {
     flex-direction: column;
     padding-bottom: 50px;
   }
-  .opskriftkortpic{
+
+  .opskriftkortpic {
     margin-bottom: 30px;
   }
-  .opskriftteaser{
+
+  .opskriftteaser {
     width: 70%;
   }
- .opskriftcontainer{
-  margin-bottom: 150px;
- }
- .knapwidth{
-  max-width: 40%;
- }
- #enokiMH{
-  background-size: 40%;
- }
- #enokiMV{
-  background-size: 50%;
- }
+
+  .opskriftcontainer {
+    margin-bottom: 150px;
+  }
+
+  .knapwidth {
+    max-width: 40%;
+  }
+
+  #enokiMH {
+    background-size: 40%;
+  }
+
+  #enokiMV {
+    background-size: 50%;
+  }
 
 
-/*------------------riskugler------------------------------*/
+  /*------------------riskugler------------------------------*/
 
-#sushikuglepic{
-  width: 100%;
-  margin-top: 0px;
-}
-#ingredienser{
-  width: 100%;
-  border-right: none;
-  text-align: center;
- 
-}
-#sushioplysninger{
-  width: 100%;
-  padding-left: 0px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid black;
-  margin-bottom: 50px;
-  text-align: center;
-}
+  #sushikuglepic {
+    width: 100%;
+    margin-top: 0px;
+  }
 
-#sushilister{
-  flex-direction: column-reverse;
-}
+  #ingredienser {
+    width: 100%;
+    border-right: none;
+    text-align: center;
 
-/*-----------------404-----------------------------------------*/
-#fejl404{
-  width: 50%;
-  margin-left: 25%;
-}
-#logpåNÅ{
-  width: 50%;
-  margin-left: 20%;
-}
-/*---------------------------Add ons-----------------------------*/
-    .laptop{
-        display: none;
-    }
-    .mobil{
-        display: block;
-    }
+  }
 
-    .posabs{
-      margin-left: 10%;
-    }
-    .margintop{
-      margin-top: 100px;
-    }
-    .marginbottom400{
-      margin-bottom: 400px;
-    }
+  #sushioplysninger {
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  #sushilister {
+    flex-direction: column-reverse;
+  }
+
+  /*-----------------404-----------------------------------------*/
+  #fejl404 {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  #logpåNÅ {
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  /*---------------------------Add ons-----------------------------*/
+  .laptop {
+    display: none;
+  }
+
+  .mobil {
+    display: block;
+  }
+
+  .posabs {
+    margin-left: 10%;
+  }
+
+  .margintop {
+    margin-top: 100px;
+  }
+
+  .marginbottom400 {
+    margin-bottom: 400px;
+  }
+
+  /*---------------------------- Login/Signup ----------------------------*/
+
+
+  .rammepåloginogsigninformularen {
+    height: 600px;
+    width: 350px;
+  }
+
+
+  .btn {
+    height: 30px;
+    width: 200px;
+    margin: 40px auto;
+  }
+
+  .login,
+  .signup {
+    font-size: 19px;
+  }
+
+  .slider {
+    height: 30px;
+    width: 100px;
+    left: 75px;
+  }
+
+  .moveslider {
+    left: 170px;
+  }
+
+  .form-section {
+    height: 500px;
+    width: 400px;
+  }
+
+  .form-section-move {
+    left: -375px;
+  }
+
+  .login-box,
+  .signup-box {
+    height: 100%;
+    width: 300px;
+  }
+
+  .ele {
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+  }
+
+  .knapbund {
+    height: 50px;
+    width: 130px;
+    font-size: 19px;
+  }
 
 }
 
