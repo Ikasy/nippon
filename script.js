@@ -14,6 +14,7 @@ let price = [];
 
 let showItem = "";
 let showPrice = 0;
+let kurvcheck = false;
 
 function tilfoejTilKurv(){
 
@@ -21,7 +22,6 @@ function tilfoejTilKurv(){
     let yakisobainput = parseFloat(yakisoba.value);
     let sushiinput = parseFloat(sushi.value);
     let person = parseFloat(sushi.value);
-    let kurvcheck;
 
     if (yakisobainput > 0){
         item.push("Yakisoba");
