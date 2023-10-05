@@ -152,7 +152,7 @@ nav {
 /*-----------------------------Forside-----------------------------------*/
 
 :root {
-  --secondary-color: #fdf5f5;
+  --secondary-color: #f4f5f0;
 }
 
 .overlay {
@@ -225,6 +225,9 @@ nav {
   position: relative;
   width: 150px;
   overflow: hidden;
+}
+.btns_more:hover{
+  background-color: #e7f7eb;
 }
 
 .btns_more {
@@ -600,7 +603,7 @@ strong {
 }
 
 .indikator {
-  width: 10%;
+  width: 25px;
   height: auto;
 }
 
@@ -640,7 +643,7 @@ strong {
 }
 
 .indikatortid {
-  width: 8%;
+  width: 22px;
   margin-right: 10px;
 }
 
@@ -919,6 +922,9 @@ strong {
 
 .blur {
   filter: blur(10px);
+}
+.nyMQ{
+  display: none;
 }
 /*------------------------ Kurv --------------------------*/
 .process{
@@ -1292,7 +1298,9 @@ strong {
   .marginbottom400 {
     margin-bottom: 400px;
   }
-
+  .nyMQ{
+    display: none;
+  }
   /*---------------------------- Login/Signup ----------------------------*/
 
 
@@ -1372,6 +1380,16 @@ strong {
 }
 
 /*der er rod i klammerne, skal den her ned under KeyFrames?????, Jakob: nej tror det er rigitgt nok den hører med til media query */
+
+@media only screen and (max-width: 500px) {
+  .indexh1{
+    font-size: 40px;
+  }
+  .container_content{
+    padding-bottom: 50px;
+  }
+
+}
 
 
 @keyframes navLinkFade {
