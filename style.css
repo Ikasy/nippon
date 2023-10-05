@@ -114,8 +114,15 @@ nav {
   letter-spacing: 1px;
 }
 
-#headericons a {
+#headericons a{
   margin-right: 20px;
+}
+#kurvpng{
+  width: 30px;
+}
+
+#profilpng{
+  width: 27px;
 }
 
 /*---------------------------- Burger ----------------------------*/
