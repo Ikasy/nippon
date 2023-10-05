@@ -719,6 +719,8 @@ strong {
 
 .voksenlayout p {
   margin-left: 40px;
+  width: 40%;
+  margin-right: 50px;
 }
 
 .tal {
@@ -729,8 +731,19 @@ strong {
 .børnelayout {
   display: flex;
   margin-top: 75px;
+  display: none;
 }
-
+.videoknap{
+  background-color: #1e6904;
+  color: white;
+  height: 30px;
+  width: 150px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
 .børnetekst {
   margin-left: 40px;
 }
@@ -909,7 +922,7 @@ strong {
 
 
 .footer {
-  background: green;
+  background: #1e6904;
   padding: 30px 0px;
   text-align: center;
 }
@@ -1182,7 +1195,17 @@ strong {
     text-align: center;
 
   }
-
+  #sushiopskrift{
+    width: 50%;
+  }
+  .voksenlayout{
+    flex-direction: column;
+  }
+  .voksenlayout p{
+    margin-left: 0px;
+    width: 100%;
+  }
+ 
   #sushioplysninger {
     width: 100%;
     padding-left: 0px;

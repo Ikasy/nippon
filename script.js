@@ -7,6 +7,9 @@ const sushi = document.getElementById("sushinrretter")
 const personer = document.getElementById("person")
 const ikurv = document.getElementById("ikurv")
 const drypRisDiv = document.getElementById("drypris")
+const fyldDiv = document.getElementById("fyld")
+const blandDiv = document.getElementById("bland")
+const kugleDiv = document.getElementById("kugle")
 
 let item = [];
 let price = [];
@@ -55,11 +58,48 @@ nav.classList.toggle("nav-active");
     burger.classList.toggle("toggle"); /* well... toggler burgeren ;) så starter forfra */
 });
 
+/* Vis/skjul alle div'er med film til børn i sushikugle opskriften */
 function toggleDrypRis() {
     if(drypRisDiv.style.display === "none") {
         drypRisDiv.style.display = "block";
     } else {
         drypRisDiv.style.display = "none";
+    }
+}
+
+function toggleFyld() {
+    if(fyldDiv.style.display === "none") {
+        fyldDiv.style.display = "block";
+    } else {
+        fyldDiv.style.display = "none";
+    }
+}
+
+function toggleBland() {
+    if(blandDiv.style.display === "none") {
+        blandDiv.style.display = "block";
+    } else {
+        blandDiv.style.display = "none";
+    }
+}
+
+function toggleKugle() {
+    if(kugleDiv.style.display === "none") {
+        kugleDiv.style.display = "block";
+    } else {
+        kugleDiv.style.display = "none";
+    }
+}
+/*Start/pause af alle videoer i børnelayoutet*/
+function toggleVideo(videoId) {
+    const video = document.getElementById(videoId);
+    console.log(videoId);
+    const isVideoPlaying = !video.paused; 
+    console.log(isVideoPlaying);
+    if(isVideoPlaying) {
+        video.pause();
+    } else {
+        video.play();
     }
 }
 
