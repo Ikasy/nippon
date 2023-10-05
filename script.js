@@ -36,19 +36,28 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);
     }
 
-    if (yakisobainput > 0){
+    if (!Number.isNaN(yakisobainput) && yakisobainput > 0){
         sessionStorage.setItem("yakisoba", yakisobainput);
+        sessionStorage.setItem("kurvcheck", true);
+    } else {
+        sessionStorage.setItem("yakisoba", 0);
         sessionStorage.setItem("kurvcheck", true);
     }   
 
     if (karryinput > 0){
         sessionStorage.setItem("karry", karryinput);
         sessionStorage.setItem("kurvcheck", true);
+    } else {
+        sessionStorage.setItem("karry", 0);
+        sessionStorage.setItem("kurvcheck", true);
     }
 
     if (sushiinput > 0){
         sessionStorage.setItem("sushi", sushiinput);
         sessionStorage.setItem("kurvcheck", true);
+    } else {
+        sessionStorage.setItem("sushi", 0);
+        sessionStorage.setItem("kurvcheck", true);      
     }
 
     //samler prisen for alle input
