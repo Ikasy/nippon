@@ -1,14 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>PROFIL</title>
-    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Nippon Måltidskasser | profil</title>
+  <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+  <header>
+    <nav>
+      <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+
+      <ul class="nav-links">
+
+        <a href="opskrifter.html">Opskrifter</a>
+        <a href="maltidskasser.html">Måltidskasser</a>
+
+        <div class="menu-dropdown" onclick="openDropdown()">
+          <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+          <div class="dropdown-list" id="omlist">
+            <div>
+              <a id="droptop" href="omos.html">Om os</a>
+            </div>
+            <div>
+              <a href="omjapanmad.html">Japansk madkultur</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="headericons">
+          <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
+          <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
+      </div>
+      </ul>
+
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+
+  
+
+    <div class="profil-kasser">
+
+      <div class="venstrekasser">
+        
+        <div class="venstrekassetop">
+          <img src="media/pickle.png" alt="storavatar">
+          <h2 id="avatartext">mamiCami</h2>
+        </div>
+        <br><br>
+        <h2 class="knyttedebrugere">Øvrige knyttede brugere</h2>
+        <div class="venstrekassebund">
+        
+          <div>
+          <img src="media/tomat.png" alt="lilleavatar">
+          <p>babyCami</p>
+          </div>
+          <div>
+          <img src="media/gulerulle.png" alt="lilleavatar">
+          <p>teenCami</p>
+          </div>
+          <div>
+          <img src="media/rejebillede.png" alt="lilleavatar">
+          <p>papiCami</p>
+          </div>
+        
+        </div>
+      </div>
+
+        <div class="højrekasse">
+          <h2 class="højrekassetext">Dine Abonnement Oplysninger</h2>
+          <ul class="info-liste">
+            <li><span>Status</span> <span class="rund-knap">Aktiv</span></li>
+            <li><span>Type</span> <span class="rund-knap">Børn</span></li>
+            <li><span>Antal</span> <span class="rund-knap">4</span></li>
+            <li><span>Retter</span> <span class="rund-knap">5</span></li>
+          </ul>
+          <h2 class="profiltext">Næste levering 6/10/2023</h2>
+          <div class="abonner-actions">
+            <button class="abonner-knap">Pause</button>
+            <button class="abonner-knap">Opsig</button>
+            <button class="abonner-knap">Forsiden</button>
+          </div>
+        </div>
+
+       
+
+
+
+    </div>
+ 
+
+
+
 </body>
+
 </html>
