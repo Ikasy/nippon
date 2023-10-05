@@ -44,7 +44,7 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);
     }   
 
-    if (karryinput > 0){
+    if (!Number.isNaN(karryinput) && karryinput > 0){
         sessionStorage.setItem("karry", karryinput);
         sessionStorage.setItem("kurvcheck", true);
     } else {
@@ -52,7 +52,7 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);
     }
 
-    if (sushiinput > 0){
+    if (!Number.isNaN(sushiinput) && sushiinput > 0){
         sessionStorage.setItem("sushi", sushiinput);
         sessionStorage.setItem("kurvcheck", true);
     } else {
