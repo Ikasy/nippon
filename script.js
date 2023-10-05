@@ -144,6 +144,8 @@ function openDropdown(){
         omlist.style.display = "block";
     }
 }
+
+
 // login og signup siden
 
 let signup = document.querySelector(".signup");

@@ -790,7 +790,7 @@ strong {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: lightgreen;
+  background-color: #b6e0c0;
   
 }
 
@@ -810,7 +810,7 @@ strong {
   height: 30px;
   width: 150px;
   border-radius: 50px;
-  background-color: green;
+  background-color: #1E6904;
   position: absolute;
   top: 40px;
   left: 100px;
@@ -870,7 +870,7 @@ strong {
   height: 60px;
   width: 150px;
   border-radius: 50px;
-  background-color: green;
+  background-color: #1e6904;
   color: white;
   font-size: 22px;
   border: none;
