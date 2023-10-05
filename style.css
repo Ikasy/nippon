@@ -1358,6 +1358,10 @@ strong {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 
 
@@ -1369,9 +1373,9 @@ strong {
 
 #container-abonnement {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  
   padding: 50px; 
-  margin-top: 5%;
   background-color: #F4F5F0;
 }
 
@@ -1413,7 +1417,7 @@ margin-top: 5%;
   border: 3px solid #1e6904;
   
 }
-.billeder-andreprofiler{
+.picklescontainer{
 float:left;
 width: 30%;
 padding: 5px;
@@ -1435,12 +1439,12 @@ text-align: center;
 
 
 #rightAside {
-  flex: 2.2;
+  flex: 1;
   background-color: white;
   color: black;
   border-radius: 15px;
   filter: drop-shadow(0px 10px 10px #e2e2e2);
-  width: 70%;
+  width: 60%;
   padding: 20px;
   align-items: center;
   
@@ -1454,14 +1458,14 @@ text-align: center;
 }
 
 
-.subscription-list {
+.info-list {
   margin-top: 2%;
   list-style: none;
   padding: 0;
   font-size: 20px;
 }
 
-.subscription-list li {
+.info-list li {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
