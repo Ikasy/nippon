@@ -1026,7 +1026,7 @@ strong {
     align-items: center;
     justify-content: space-around;
 
-    background: rgb(255, 227, 227);
+    background: #e7f7eb;
     /* Husk at skifte farve */
 
     transform: translateX(100%);
