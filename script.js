@@ -48,11 +48,15 @@ function tilfoejTilKurv(){
     return kurvcheck;
     // console.log(kurvcheck);
 }
-// if(kurvcheck === true) {
-//         efterklik.style.display = "block";
-//     } else {
-//         efterklik.style.display = "none";
-//     }
+
+function toggleKnap(){
+if(efterklik.style.display = "none") {
+        efterklik.style.display = "flex";
+        ikurv.style.display = "none";
+    } else {
+        efterklik.style.display = "none";
+    }
+}
     
 // console.log(kurvcheck)
 if (fuldKurv !== null || tomKurv !== null ){

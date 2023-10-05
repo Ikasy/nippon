@@ -467,6 +467,12 @@ input[type=number] {
   text-align: center;
 
 }
+#efterklik{
+  width: 80%;
+  display: none;
+  justify-content: space-between;
+  margin: 50px auto;
+}
 
 
 /*---------------------------- Scrollbar ----------------------------*/
