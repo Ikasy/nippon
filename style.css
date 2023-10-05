@@ -962,6 +962,146 @@ strong {
 }
 
 
+/*---------------------------- abonnement profil----------------------------*/
+
+
+
+#container-abonnement {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 50px; 
+  background-color: #F4F5F0;
+}
+
+#leftWrapper {
+  flex: 1;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  color: silver;
+  margin-right: 2%; 
+  
+}
+
+#leftTop {
+  height: 350px;
+  width: 300px;
+  margin-left: 15%;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  border: 3px solid #1e6904;
+}
+
+#mamiCami{
+margin-left: 25%;
+margin-top: 5%;
+
+
+}
+
+#leftBottom {
+  height: 350px;
+  width: 300px;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  border: 3px solid #1e6904;
+  
+}
+.picklescontainer{
+float:left;
+width: 30%;
+padding: 5px;
+background-color: #F6F6F6;
+margin-top: 2%;
+
+}
+.andreprofilertekst{
+color: black;
+text-align: center;
+}
+.andreprofiler{
+  
+  width: 30%;
+  background-color: #c23535;
+  margin-top: 35%;
+  border-radius: 30px;
+  }
+
+
+#rightAside {
+  flex: 2;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  width: 60%;
+  padding: 20px;
+  align-items: center;
+  
+}
+
+.abonnementh2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 46px;
+  margin: 5px 0px;
+}
+
+
+.info-list {
+  margin-top: 2%;
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.info-list li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.rund-knap {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  background-color: #1E6904;
+  border-radius: 10px;
+  margin-left: 50px; /* Adjust margin to separate the value */
+  text-align: center;
+  line-height: 100%;
+  color: white;
+  
+}
+
+.subscription-actions {
+  text-align: left; /* Align content to the left */
+  margin-top: 20%;
+}
+
+.pause-opsig {
+  align-items: start;
+  background-color: #1E6904;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 45px;
+  margin-top: 40px;
+  margin-right: 15%;
+  cursor: pointer;
+}
+
+.pause-opsig:hover {
+  background-color: darkgreen; /* Change color on hover */
+}
+
+
+
 /*---------------------------- Mobil ----------------------------*/
 
 @media only screen and (max-width: 900px) {
@@ -1358,10 +1498,6 @@ strong {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 
 
@@ -1371,136 +1507,3 @@ strong {
 
 
 
-#container-abonnement {
-  display: flex;
-  justify-content: space-between;
-  
-  padding: 50px; 
-  background-color: #F4F5F0;
-}
-
-#leftWrapper {
-  flex: 1;
-  filter: drop-shadow(0px 10px 10px #e2e2e2);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  width: 33%;
-  color: silver;
-  margin-right: 2%; 
-  
-}
-
-#leftTop {
-  height: 350px;
-  width: 300px;
-  margin-left: 15%;
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  border: 3px solid #1e6904;
-}
-
-#mamiCami{
-margin-left: 25%;
-margin-top: 5%;
-
-
-}
-
-#leftBottom {
-  height: 350px;
-  width: 300px;
-  margin-left: 15%;
-  margin-top: 5%;
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  border: 3px solid #1e6904;
-  
-}
-.picklescontainer{
-float:left;
-width: 30%;
-padding: 5px;
-background-color: #F6F6F6;
-margin-top: 2%;
-
-}
-.andreprofilertekst{
-color: black;
-text-align: center;
-}
-.andreprofiler{
-  
-  width: 30%;
-  background-color: #c23535;
-  margin-top: 35%;
-  border-radius: 30px;
-  }
-
-
-#rightAside {
-  flex: 1;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  filter: drop-shadow(0px 10px 10px #e2e2e2);
-  width: 60%;
-  padding: 20px;
-  align-items: center;
-  
-}
-
-.abonnementh2{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 46px;
-  margin: 5px 0px;
-}
-
-
-.info-list {
-  margin-top: 2%;
-  list-style: none;
-  padding: 0;
-  font-size: 20px;
-}
-
-.info-list li {
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.rund-knap {
-  display: inline-block;
-  width: 60px;
-  height: 20px;
-  background-color: #1E6904;
-  border-radius: 10px;
-  margin-left: 50px; /* Adjust margin to separate the value */
-  text-align: center;
-  line-height: 100%;
-  color: white;
-  
-}
-
-.subscription-actions {
-  text-align: left; /* Align content to the left */
-  margin-top: 20%;
-}
-
-.pause-opsig {
-  align-items: start;
-  background-color: #1E6904;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  padding: 10px 45px;
-  margin-top: 40px;
-  margin-right: 15%;
-  cursor: pointer;
-}
-
-.pause-opsig:hover {
-  background-color: darkgreen; /* Change color on hover */
-}
