@@ -1,18 +1,18 @@
 const burger = document.querySelector(".burger");
 const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a"); /*dette er et array - alle med classnamet nav-links indsættes */
-const yakisoba = document.getElementById("yakisobanrretter")
-const karry = document.getElementById("karrynrretter")
-const sushi = document.getElementById("sushinrretter")
-const personer = document.getElementById("person")
-const ikurv = document.getElementById("ikurv")
-const drypRisDiv = document.getElementById("drypris")
-const fyldDiv = document.getElementById("fyld")
-const blandDiv = document.getElementById("bland")
-const kugleDiv = document.getElementById("kugle")
-const tomKurv = document.getElementById("tomkurv")
-const fuldKurv = document.getElementById("kurv")
-
+const yakisoba = document.getElementById("yakisobanrretter");
+const karry = document.getElementById("karrynrretter");
+const sushi = document.getElementById("sushinrretter");
+const personer = document.getElementById("person");
+const ikurv = document.getElementById("ikurv");
+const drypRisDiv = document.getElementById("drypris");
+const fyldDiv = document.getElementById("fyld");
+const blandDiv = document.getElementById("bland");
+const kugleDiv = document.getElementById("kugle");
+const tomKurv = document.getElementById("tomkurv");
+const fuldKurv = document.getElementById("kurv");
+const efterklik = document.getElementById("efterklik");
 let item = [];
 let price = [];
 
@@ -46,15 +46,22 @@ function tilfoejTilKurv(){
 
     }
     return kurvcheck;
+    // console.log(kurvcheck);
 }
+// if(kurvcheck === true) {
+//         efterklik.style.display = "block";
+//     } else {
+//         efterklik.style.display = "none";
+//     }
+    
 // console.log(kurvcheck)
 if (fuldKurv !== null || tomKurv !== null ){
     if (kurvcheck === null || kurvcheck === false ){
-        tomKurv.style.display = "block"
-        fuldKurv.style.display = "none"
+        tomKurv.style.display = "block";
+        fuldKurv.style.display = "none";
     } else {
-        fuldKurv.style.display = "block"
-        tomKurv.style.display = "none"
+        fuldKurv.style.display = "block";
+        tomKurv.style.display = "none";
         
         }
 }
@@ -153,12 +160,16 @@ let login = document.querySelector(".login");
 let slider = document.querySelector(".slider");
 let formSection = document.querySelector(".form-section");
 
-signup.addEventListener("click", () => {
-	slider.classList.add("moveslider");
-	formSection.classList.add("form-section-move");
-});
+if (signup !== null && login !==null){
+    signup.addEventListener("click", () => {
+        slider.classList.add("moveslider");
+        formSection.classList.add("form-section-move");
+    });
 
-login.addEventListener("click", () => {
-	slider.classList.remove("moveslider");
-	formSection.classList.remove("form-section-move");
-});
+    login.addEventListener("click", () => {
+        slider.classList.remove("moveslider");
+        formSection.classList.remove("form-section-move");
+    });
+
+}
+
