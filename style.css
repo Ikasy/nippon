@@ -12,12 +12,7 @@
 
 body {
   background-color: #F4F5F0;
-<<<<<<< Updated upstream
   overflow-x: hidden;
-=======
-  
->>>>>>> Stashed changes
-
 }
 
 h1 {
@@ -1335,9 +1330,7 @@ strong {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-<<<<<<< Updated upstream
 }
-=======
 }
 
 
@@ -1481,4 +1474,3 @@ text-align: center;
 .pause-opsig:hover {
   background-color: darkgreen; /* Change color on hover */
 }
->>>>>>> Stashed changes
