@@ -743,6 +743,10 @@ strong {
   border-radius: 50px;
   margin-top: 30px;
 }
+.videoknap:hover {
+  background-color: #193d0d;
+  /*yay or nay???*/
+}
 .børnetekst {
   margin-left: 40px;
 }
@@ -1353,7 +1357,6 @@ strong {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
-}
 }
 
 
