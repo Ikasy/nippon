@@ -57,11 +57,50 @@
     </div>
     
     <div id="kurv" >
-        <img src="media/LKasserFritlagtBørn.png" alt="Børnekasse">
-        <div>
-            <p id="demo"></p>
+        <div id="kurvindhold">
+            <img src="media/LKasserFritlagtBørn.png" alt="Børnekasse">
+            <div id="kurvcontent">
+                <div>
+                    <h2>Din kasse</h2>
+                    <h2>Antal</h2>
+                </div>
+                <div>
+                    <h2>Børn</h2>
+                    <button class="abonnement kurvfjern"> Fjern</button>
+                </div>
+                <div id="stipletlinje">
+                    <h2>Personer</h2>
+                    <h2 id="insPersoner"></h2>
+                </div>
+                <div id="kurvdiv">
+                    <h2>Retter</h2>
+                    <div id="yakiDiv">
+                        <p>Yakisoba</p>
+                        <p id="insYaki"></p>
+                    </div>
+                    <div id="karryDiv">
+                        <p>Japansk Karry</p>
+                        <p id="insKarry"></p>
+                    </div>
+                    <div id="sushiDiv">
+                        <p>Sushi Kugler</p>
+                        <p id="insSushi"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pris">
+            <h2>Samlet beløb:</h2>
+            <h2 id="samletPris"> 499 kr</h2>
+        </div>
+
+        <div id="kurvknapper">
+            <a class="enkøb" href="maltidskasser.html">Shop videre</a>
+            <a class="abonnement" href="">Gå til betaling</a>
         </div>
     </div>
+<p id="demo"></p>
 
     <div id="tomkurv">
         <h2> Kurven er tom</h2>

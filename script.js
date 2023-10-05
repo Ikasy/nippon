@@ -13,42 +13,54 @@ const kugleDiv = document.getElementById("kugle");
 const tomKurv = document.getElementById("tomkurv");
 const fuldKurv = document.getElementById("kurv");
 const efterklik = document.getElementById("efterklik");
-let item = [];
-let price = [];
+const insPersoner = document.getElementById("insPersoner");
+const insYaki = document.getElementById("insYaki");
+const insKarry = document.getElementById("insKarry");
+const insSushi = document.getElementById("insSushi");
+const yakiDiv = document.getElementById("yakiDiv");
+const karryDiv = document.getElementById("karryDiv");
+const sushiDiv = document.getElementById("sushiDiv");
+const samlet = document.getElementById("samletPris");
 
-let showItem = "";
-let showPrice = 0;
+
 let kurvcheck = false;
 
 function tilfoejTilKurv(){
-
     let karryinput = parseFloat(karry.value);
     let yakisobainput = parseFloat(yakisoba.value);
     let sushiinput = parseFloat(sushi.value);
-    let person = parseFloat(sushi.value);
+    let person = parseFloat(personer.value);
+
+    if (person > 0){
+        sessionStorage.setItem("person", person);
+        sessionStorage.setItem("kurvcheck", true);
+    }
 
     if (yakisobainput > 0){
-        item.push("Yakisoba");
         sessionStorage.setItem("yakisoba", yakisobainput);
-        kurvcheck = true;
+        sessionStorage.setItem("kurvcheck", true);
     }   
 
     if (karryinput > 0){
-        item.push("Japansk Karry");
         sessionStorage.setItem("karry", karryinput);
-        kurvcheck = true;
+        sessionStorage.setItem("kurvcheck", true);
     }
 
     if (sushiinput > 0){
-        item.push("Sushi Kugler");
         sessionStorage.setItem("sushi", sushiinput);
-        kurvcheck = true;
-
+        sessionStorage.setItem("kurvcheck", true);
     }
-    return kurvcheck;
-    // console.log(kurvcheck);
+
+    //samler prisen for alle input
+    let totalretter = (sushiinput + karryinput + yakisobainput) * person;
+    console.log(totalretter);
+    let totalpris = totalretter * 50;
+    console.log(totalpris);
+    sessionStorage.setItem("totalpris", totalpris);
+    console.log(sessionStorage.getItem("totalpris"));
 }
 
+//skifter inde på bestillingssiden mellem tilføj knap og gå vidre knapperne
 function toggleKnap(){
 if(efterklik.style.display = "none") {
         efterklik.style.display = "flex";
@@ -59,21 +71,55 @@ if(efterklik.style.display = "none") {
 }
     
 // console.log(kurvcheck)
+
+//Tjekker om man er inde på kurven
 if (fuldKurv !== null || tomKurv !== null ){
-    if (kurvcheck === null || kurvcheck === false ){
+    //tjekker om der er noget i kurven og skifter mellenm hvad der er i kurven
+    if (sessionStorage.getItem("kurvcheck") === null ){
         tomKurv.style.display = "block";
         fuldKurv.style.display = "none";
     } else {
         fuldKurv.style.display = "block";
         tomKurv.style.display = "none";
         
-        }
+    }
+        
+    
+    if (sessionStorage.getItem("person") > 0){
+        insPersoner.innerHTML = sessionStorage.getItem("person");
+    } 
+
+    if (sessionStorage.getItem("yakisoba") > 0){
+        insYaki.innerHTML = sessionStorage.getItem("yakisoba");
+    }  else {
+        yakiDiv.style.display = "none";
+    } 
+
+    if (sessionStorage.getItem("karry") > 0){
+        insKarry.innerHTML = sessionStorage.getItem("karry");
+    }  else {
+        karryDiv.style.display = "none";
+    } 
+
+    if (sessionStorage.getItem("sushi") > 0){
+        insSushi.innerHTML = sessionStorage.getItem("sushi");
+    }  else {
+        sushiDiv.style.display = "none";
+    } 
+samlet.innerHTML =sessionStorage.getItem("totalpris");
+
+
+
+
+
+
+    if ( document.getElementById("demo") !== null){
+        let yakisobaamount = sessionStorage.getItem("yakisoba");
+        document.getElementById("demo").innerHTML = yakisobaamount;
+    }
 }
 
-if ( document.getElementById("demo") !== null){
-    let yakisobaamount = sessionStorage.getItem("yakisoba");
-    document.getElementById("demo").innerHTML = yakisobaamount;
-}
+
     
 burger.addEventListener("click", () => { /* lytter efter hvornår der clickes og starter funktionen derefter */
 nav.classList.toggle("nav-active"); 
