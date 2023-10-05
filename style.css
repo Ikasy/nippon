@@ -130,6 +130,9 @@ nav {
 }
 
 .dropdown-list {
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
   color: black;
   position: absolute;
   z-index: 1;
@@ -319,7 +322,7 @@ nav {
 
 #kasser section img {
   width: 100%;
-
+  border-radius: 15px;
 }
 
 .kasseknapper {
@@ -1030,7 +1033,7 @@ strong {
     /* Husk at skifte farve */
 
     transform: translateX(100%);
-    transition: All 0.5s ease;
+    transition: All 0.3s ease;
   }
 
   .nav-links a {
@@ -1048,7 +1051,10 @@ strong {
     margin-top: 40px;
   }
 
-
+  .dropdown-list {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0px;
+  }
   .nav-active {
     transform: translateX(0);
   }
