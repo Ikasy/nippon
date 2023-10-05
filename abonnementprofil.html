@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nippon Måltidskasser | profil</title>
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+            
+            <ul class="nav-links"> 
+                
+                <a href="opskrifter.html">Opskrifter</a> 
+                <a href="maltidskasser.html">Måltidskasser</a>
+
+                <div class="menu-dropdown" onclick = "openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                        <div class="dropdown-list" id="omlist">
+                            <div>
+                                <a id="droptop" href="omos.html">Om os</a>
+                            </div>
+                            <div>
+                                <a href="omjapanmad.html">Om Japansk Mad</a>
+                            </div>
+                        </div>
+                </div>
+
+                <div id="headericons">
+                    <a href="kurv.html"><i class="fa-solid fa-basket-shopping fa-xl" style="color: #000000;"></i></a>
+                    <a href="profil.html"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i></a>
+                </div>
+            </ul>
+            
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+         </nav>  
+    </header>
+
+    
+    
+    <div id="container-abonnement">
+        <div id="leftWrapper">
+            <div id="leftTop">
+              <img id="mamiCami" src="media/pickle.png" alt="Image Placeholder">
+              <h2 class="andreprofilertekst">mamiCami</h2>
+            </div>
+
+
+            <div id="leftBottom">
+                <h2 class="andreprofilertekst">Børn/Øvrige knyttede brugere</h2>
+              <div class="billeder-andreprofiler">
+                <img src="media/pickle.png" alt="Billede">
+                <h3 class="andreprofiler">babyCami</h3>
+              </div>
+              <div class="billeder-andreprofiler">
+                <img src="media/pickle.png" alt="Image 2">
+                <h3 class="andreprofiler">teenCami</h3>
+              </div>
+              <div class="billeder-andreprofiler">
+                <img src="media/pickle.png" alt="Image 3">
+                <h3 class="andreprofiler">papiCami</h3>
+              </div>
+            </div>
+          </div>
+        
+          
+        <div id="rightAside">
+            <h2 class="abonnementh2">Abonnement oplysninger</h2>
+            <ul class="subscription-list">
+                <li><span>Status</span> <span class="rund-knap">Aktiv</span></li>
+                <li><span>Type</span> <span class="rund-knap">Børn</span></li>
+                <li><span>Antal</span> <span class="rund-knap">4</span></li>
+                <li><span>Retter</span> <span class="rund-knap">5</span></li>
+              </ul>
+              <div class="subscription-actions">
+                <h2 class="abonnementh2">Næste levering 6/10/2023</h2>
+                <button class="pause-opsig">Pause</button>
+                <button class="pause-opsig">Opsig</button>
+              </div>
+</div>
+        </div>
+      </div>
+      
+</body>
+</html>
