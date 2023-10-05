@@ -486,7 +486,16 @@ input[type=number] {
 
 
 
-.logoomcontainer {
+.logoomcontaineromos {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 600px;
+  background-image: url(media/rødkål.png);
+  background-size: 100%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+.logoomcontainerjapan {
   text-align: center;
   margin-top: 10%;
   padding-bottom: 600px;
