@@ -621,7 +621,7 @@ strong {
 
 .opskriftkortpic {
   border-radius: 15px;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -931,8 +931,9 @@ strong {
 }
 
 .knapwidth {
-  width: inherit;
+  width: 40%;
   padding-left: 20px;
+  text-align: center;
 }
 
 .marginbottom100 {
@@ -1230,6 +1231,7 @@ strong {
 
   .opskriftkortpic {
     margin-bottom: 30px;
+    width: 100%;
   }
 
   .opskriftteaser {
