@@ -45,6 +45,12 @@ h3 {
   font-size: 18px;
 }
 
+h4{
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 12px;
+}
+
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -483,7 +489,16 @@ input[type=number] {
 
 
 
-.logoomcontainer {
+.logoomcontaineromos {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 600px;
+  background-image: url(media/rødkål.png);
+  background-size: 100%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+.logoomcontainerjapan {
   text-align: center;
   margin-top: 10%;
   padding-bottom: 600px;
