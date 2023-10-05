@@ -321,8 +321,10 @@ nav {
 #kasser section {
   display: flex;
   width: 25%;
+  height: auto;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 0% 2%;
 }
 
