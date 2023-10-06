@@ -986,6 +986,36 @@ strong {
   text-align: center;
   margin-top: 100px;
 }
+.footeraddon .række {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+}
+
+.footeraddon .række a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.footeraddon .række a:hover {
+  color:black;
+}
+
+.footeraddon .række ul {
+  width: 100%;
+}
+
+.footeraddon .række ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footeraddon .række a i {
+  font-size: 40px;
+  margin: 0% 1%;
+}
 /*------------------------ Kurv --------------------------*/
 .process{
   width: 50%;
