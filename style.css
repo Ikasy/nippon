@@ -1149,6 +1149,7 @@ strong {
   
   .profil-kasser{
   display: flex;
+  margin-top: 100px;
   }
 
   .venstrekasser {
@@ -1258,7 +1259,7 @@ strong {
     background-color: #1e6904;
     color: white;
     font-family: 'Raleway', sans-serif;
-    margin-top: 25px;
+    margin-top: 2%;
   }
   
   .abonner-knap:first-child {
@@ -1266,9 +1267,7 @@ strong {
     margin-right: 10%;
   }
   
-  .abonner-knap:last-child {
-    margin-left: 30%;
-  }
+  
   
 
 
@@ -1582,10 +1581,31 @@ strong {
     margin-left: 20%;
   }
  /*---------------------------Abonnemment profil-----------------------------*/
+ 
  .profil-kasser{
   flex-direction: column;
-
+  align-items: center;
  }
+
+
+
+.venstrekasser{
+width: 75%;
+align-items: center;
+}
+.venstrekassetop{
+align-content: center;
+margin-left: 15%;
+}
+.højrekasse{
+margin-left: 10%;
+}
+.profiltext{
+width: 100%;
+}
+
+
+ 
   /*---------------------------Add ons-----------------------------*/
   .laptop {
     display: none;
