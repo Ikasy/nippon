@@ -6,6 +6,7 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>OPSKRIFTER</title>
+    
     <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -154,8 +155,13 @@
                         <p class="margintop30">
                             Antal personer:<br>
                         </p> 
-                            <input type="number" id="opskriftpersoner" placeholder="1" value="">
-                        </p>
+                        <div>
+                            <img id="minus" onclick="fjernPortioner()" src="media/Minusikon.png" alt="Fjern mængde af portioner">
+                            <p id="portioner"></p>
+                            <img id="plus" onclick="tilfoejPortioner()" src="media/plusikon.png" alt="Tilføj flere portioner">
+                        </div>
+
+
                         <p class="margintop30">
                             Sværhedsgrad:<br>
                         </p>
