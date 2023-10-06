@@ -990,6 +990,42 @@ strong {
 .nyMQ{
   display: none;
 }
+.footeraddon {
+  background: #1e6904;
+  padding: 30px 0px;
+  text-align: center;
+  margin-top: 100px;
+}
+.footeraddon .række {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: white;
+}
+
+.footeraddon .række a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+.footeraddon .række a:hover {
+  color:black;
+}
+
+.footeraddon .række ul {
+  width: 100%;
+}
+
+.footeraddon .række ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footeraddon .række a i {
+  font-size: 40px;
+  margin: 0% 1%;
+}
 /*------------------------ Kurv --------------------------*/
 .process{
   width: 50%;
@@ -1002,6 +1038,7 @@ strong {
   width: 50px;
   height: 10px;
   background-color: #193d0d;
+  border-radius: 5px;
 }
 
 #tomkurv{
@@ -1122,6 +1159,7 @@ strong {
   
   .profil-kasser{
   display: flex;
+  margin-top: 100px;
   }
 
   .venstrekasser {
@@ -1231,7 +1269,7 @@ strong {
     background-color: #1e6904;
     color: white;
     font-family: 'Raleway', sans-serif;
-    margin-top: 25px;
+    margin-top: 2%;
   }
   
   .abonner-knap:first-child {
@@ -1239,9 +1277,7 @@ strong {
     margin-right: 10%;
   }
   
-  .abonner-knap:last-child {
-    margin-left: 30%;
-  }
+  
   
 
 
@@ -1428,6 +1464,35 @@ strong {
     flex-direction: column;
     align-items: start;
   }
+  /*----------------------------- Kurv ----------------------------------*/
+  .process{
+    width: 90%;
+  }
+  .process img{
+    width: 35px;
+  }
+
+  #tomkurv{
+    padding-top: 5%;
+    padding-left: 20%;
+    width: 90%;
+    height: 200px;
+
+  }
+
+  #kurv{
+    width: 90%;
+  }
+  #kurvindhold{
+    display: block;
+    width: 100%;
+  }
+  #kurvcontent{
+    width: 100%;
+  }
+  #kurvindhold img{
+    width: 100%;
+  }
 
   /*---------------------------- OM OS ----------------------------*/
 
@@ -1526,10 +1591,31 @@ strong {
     margin-left: 20%;
   }
  /*---------------------------Abonnemment profil-----------------------------*/
+ 
  .profil-kasser{
   flex-direction: column;
-
+  align-items: center;
  }
+
+
+
+.venstrekasser{
+width: 75%;
+align-items: center;
+}
+.venstrekassetop{
+align-content: center;
+margin-left: 15%;
+}
+.højrekasse{
+margin-left: 10%;
+}
+.profiltext{
+width: 100%;
+}
+
+
+ 
   /*---------------------------Add ons-----------------------------*/
   .laptop {
     display: none;
@@ -1626,6 +1712,20 @@ strong {
     margin: 0% 3%;
   }
 
+  .footeraddon {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footeraddon .række ul li {
+    display: block;
+    margin: 10px 0px;
+  }
+
+  .footeraddon .row a i {
+    margin: 0% 3%;
+  }
+
 
 
 
@@ -1639,6 +1739,10 @@ strong {
   }
   .container_content{
     padding-bottom: 50px;
+  }
+
+  #kurvknapper{
+    flex-direction: column;
   }
 
 }
