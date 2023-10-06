@@ -1028,6 +1028,7 @@ strong {
   width: 50px;
   height: 10px;
   background-color: #193d0d;
+  border-radius: 5px;
 }
 
 #tomkurv{
@@ -1454,6 +1455,35 @@ strong {
     flex-direction: column;
     align-items: start;
   }
+  /*----------------------------- Kurv ----------------------------------*/
+  .process{
+    width: 90%;
+  }
+  .process img{
+    width: 35px;
+  }
+
+  #tomkurv{
+    padding-top: 5%;
+    padding-left: 20%;
+    width: 90%;
+    height: 200px;
+
+  }
+
+  #kurv{
+    width: 90%;
+  }
+  #kurvindhold{
+    display: block;
+    width: 100%;
+  }
+  #kurvcontent{
+    width: 100%;
+  }
+  #kurvindhold img{
+    width: 100%;
+  }
 
   /*---------------------------- OM OS ----------------------------*/
 
@@ -1679,6 +1709,10 @@ strong {
   }
   .container_content{
     padding-bottom: 50px;
+  }
+
+  #kurvknapper{
+    flex-direction: column;
   }
 
 }
