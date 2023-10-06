@@ -608,6 +608,11 @@ strong {
   height: auto;
 }
 
+#portiontaeller{
+  display: flex;
+}
+
+
 .opskriftkort {
   width: 70%;
   display: flex;
