@@ -980,6 +980,12 @@ strong {
 .nyMQ{
   display: none;
 }
+.footeraddon {
+  background: #1e6904;
+  padding: 30px 0px;
+  text-align: center;
+  margin-top: 100px;
+}
 /*------------------------ Kurv --------------------------*/
 .process{
   width: 50%;
@@ -1613,6 +1619,20 @@ strong {
   }
 
   .footer .row a i {
+    margin: 0% 3%;
+  }
+
+  .footeraddon {
+    text-align: left;
+    padding: 5%;
+  }
+
+  .footeraddon .række ul li {
+    display: block;
+    margin: 10px 0px;
+  }
+
+  .footeraddon .row a i {
     margin: 0% 3%;
   }
 
