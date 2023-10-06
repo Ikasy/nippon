@@ -44,7 +44,7 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);
     }   
 
-    if (karryinput > 0){
+    if (!Number.isNaN(karryinput) && karryinput > 0){
         sessionStorage.setItem("karry", karryinput);
         sessionStorage.setItem("kurvcheck", true);
     } else {
@@ -52,7 +52,7 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);
     }
 
-    if (sushiinput > 0){
+    if (!Number.isNaN(sushiinput) && sushiinput > 0){
         sessionStorage.setItem("sushi", sushiinput);
         sessionStorage.setItem("kurvcheck", true);
     } else {
@@ -67,7 +67,22 @@ function tilfoejTilKurv(){
     console.log(totalpris);
     sessionStorage.setItem("totalpris", totalpris);
     console.log(sessionStorage.getItem("totalpris"));
+    console.log(sessionStorage.getItem(karryinput));
+    console.log(sessionStorage.getItem(yakisobainput));
+    console.log(sessionStorage.getItem(sushiinput));
+    console.log(sessionStorage.getItem(person));
 }
+
+function fjernIndhold() {
+    sessionStorage.removeItem("person");
+    sessionStorage.removeItem("yakisoba");
+    sessionStorage.removeItem("karry");
+    sessionStorage.removeItem("sushi");
+    sessionStorage.removeItem("kurvcheck");
+    sessionStorage.removeItem("totalpris");
+    tomKurv.style.display = "block";
+    fuldKurv.style.display = "none";
+    }
 
 //skifter inde på bestillingssiden mellem tilføj knap og gå vidre knapperne
 function toggleKnap(){
