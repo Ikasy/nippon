@@ -33,64 +33,118 @@ const portioner = document.getElementById("portioner");
 
 
 let maengde = 2;
-if (ingredienser2 !== null || 
-    ingredienser4 !== null || 
-    ingredienser6 !== null || 
-    ingredienser8 !== null || 
-    ingredienser10 !== null|| 
-    plus !== null || 
-    minus !== null || 
-    portioner !== null) {
-    
-        if (maengde = 2) {
+if (ingredienser2 !== null || ingredienser4 !== null || ingredienser6 !== null || ingredienser8 !== null || ingredienser10 !== null) {
+        if (maengde === 2) {
             ingredienser2.style.display = "flex";
             ingredienser4.style.display = "none";
             ingredienser6.style.display = "none";
             ingredienser8.style.display = "none";
             ingredienser10.style.display = "none";
+            portioner.innerHTML = maengde;
         }
-        if (maengde = 4) {
-            ingredienser2.style.display = "none";
-            ingredienser4.style.display = "flex";
-            ingredienser6.style.display = "none";
-            ingredienser8.style.display = "none";
-            ingredienser10.style.display = "none";
-        }
-        if (maengde = 6) {
-            ingredienser2.style.display = "none";
-            ingredienser4.style.display = "none";
-            ingredienser6.style.display = "flex";
-            ingredienser8.style.display = "none";
-            ingredienser10.style.display = "none";
-        }
-        if (maengde = 8) {
-            ingredienser2.style.display = "none";
-            ingredienser4.style.display = "none";
-            ingredienser6.style.display = "none";
-            ingredienser8.style.display = "flex";
-            ingredienser10.style.display = "none";
-        }
-        if (maengde = 10) {
-            ingredienser2.style.display = "none";
-            ingredienser4.style.display = "none";
-            ingredienser6.style.display = "none";
-            ingredienser8.style.display = "none";
-            ingredienser10.style.display = "flex";
-        }
-        portioner.innerHTML = maengde;
 }
 
 function fjernPortioner(){
-    maengde -= 2;
+    maengde = maengde - 2;
     if (maengde < 2){
         maengde = 2;
+    }
+
+    if (maengde === 2) {
+        ingredienser2.style.display = "flex";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 4) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "flex";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 6) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "flex";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 8) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "flex";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+        
+    }
+    if (maengde === 10) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "flex";
+        portioner.innerHTML = maengde;
     }
 }
 
 function tilfoejPortioner(){
-    maengde += 2;
+    maengde = maengde + 2;
     if (maengde > 10){
         maengde = 10;
+    }
+
+    if (maengde === 2) {
+        ingredienser2.style.display = "flex";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 4) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "flex";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 6) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "flex";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+
+    }
+    if (maengde === 8) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "flex";
+        ingredienser10.style.display = "none";
+        portioner.innerHTML = maengde;
+        
+    }
+    if (maengde === 10) {
+        ingredienser2.style.display = "none";
+        ingredienser4.style.display = "none";
+        ingredienser6.style.display = "none";
+        ingredienser8.style.display = "none";
+        ingredienser10.style.display = "flex";
+        portioner.innerHTML = maengde;
     }
 }
 
