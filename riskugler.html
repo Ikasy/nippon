@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,35 +11,36 @@
     <link rel="icon" href="media/nipponlogo.png">
     <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
-            
-            <ul class="nav-links"> 
-                
-                <a href="opskrifter.html">Opskrifter</a> 
+
+            <ul class="nav-links">
+
+                <a href="opskrifter.html">Opskrifter</a>
                 <a href="maltidskasser.html">Måltidskasser</a>
-    
-                <div class="menu-dropdown" onclick = "openDropdown()">
+
+                <div class="menu-dropdown" onclick="openDropdown()">
                     <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
-                        <div class="dropdown-list" id="omlist">
-                            <div>
-                                <a id="droptop" href="omos.html">Om os</a>
-                            </div>
-                            <div>
-                                <a href="omjapanmad.html">Japansk madkultur</a>
-                            </div>
+                    <div class="dropdown-list" id="omlist">
+                        <div>
+                            <a id="droptop" href="omos.html">Om os</a>
                         </div>
+                        <div>
+                            <a href="omjapanmad.html">Japansk madkultur</a>
+                        </div>
+                    </div>
                 </div>
-    
+
                 <div id="headericons">
                     <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
                     <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
                 </div>
             </ul>
-            
-    
+
+
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -146,7 +148,7 @@
                             <img class="indikator" src="media/fiskikon.png" alt="laks">
                             <img class="indikator" src="media/rejeikon.png" alt="reje">
                         </div>
-                        <p class="margintop30">    
+                        <p class="margintop30">
                             Arbejdestid:<br>
                         </p>
                         <div class="arbejdstid">
@@ -155,11 +157,13 @@
                         </div>
                         <p class="margintop30">
                             Antal personer:<br>
-                        </p> 
+                        </p>
                         <div id="portiontaeller">
-                            <img id="minus" onclick="fjernPortioner()" src="media/Minusikon.png" alt="Fjern mængde af portioner">
+                            <img id="minus" onclick="fjernPortioner()" src="media/Minusikon.png"
+                                alt="Fjern mængde af portioner">
                             <p id="portioner"></p>
-                            <img id="plus" onclick="tilfoejPortioner()" src="media/plusikon.png" alt="Tilføj flere portioner">
+                            <img id="plus" onclick="tilfoejPortioner()" src="media/plusikon.png"
+                                alt="Tilføj flere portioner">
                         </div>
 
 
@@ -173,17 +177,19 @@
                             <img class="indikator" src="media/sværhedtom.png" alt="graduering">
                             <img class="indikator" src="media/sværhedtom.png" alt="graduering">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div id="sushiopskrift">
             <div class="voksenlayout">
-                    <h3 class="tal">1</h3>
-                    <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.</p>
-                    <div class="videoknap" onclick="toggleDrypRis();">Jeg kan selv:</div>
+                <h3 class="tal">1</h3>
+                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene
+                    køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.
+                </p>
+                <div class="videoknap" onclick="toggleDrypRis();">Jeg kan selv:</div>
             </div>
 
             <div class="børnelayout" id="drypris">
@@ -193,19 +199,22 @@
                     </video>
                 </div>
                 <div class="børnetekst">
-                    <div class="videoknap" onclick="toggleVideo('drypRisVideo')"><img class="playpause" src="media/playpause.png" alt="play/pause"></div>
+                    <div class="videoknap" onclick="toggleVideo('drypRisVideo')"><img class="playpause"
+                            src="media/playpause.png" alt="play/pause"></div>
                     <h3 class="margintop30">Jeg kan selv:</h3>
                     <p>røre sukker og eddike sammen i en skål. Dryppe det på de kølede ris</p>
                 </div>
             </div>
-        
+
             <div class="kuglestreg"></div>
-        
+
 
             <div class="voksenlayout">
                 <h3 class="tal">2</h3>
-                    <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.</p>
-                    <div class="videoknap" onclick="toggleFyld();">Jeg kan selv:</div>
+                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene
+                    køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.
+                </p>
+                <div class="videoknap" onclick="toggleFyld();">Jeg kan selv:</div>
             </div>
             <div class="børnelayout" id="fyld">
                 <div class="video">
@@ -214,7 +223,8 @@
                     </video>
                 </div>
                 <div class="børnetekst">
-                    <div class="videoknap" onclick="toggleVideo('fyldVideo')"><img class="playpause" src="media/playpause.png" alt="play/pause"></div>
+                    <div class="videoknap" onclick="toggleVideo('fyldVideo')"><img class="playpause"
+                            src="media/playpause.png" alt="play/pause"></div>
                     <h3 class="margintop30">Jeg kan selv:</h3>
                     <p>Skære avokado, rive agurk, pille rejer</p>
                 </div>
@@ -225,8 +235,10 @@
 
             <div class="voksenlayout">
                 <h3 class="tal">3</h3>
-                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.</p>
-                    <div class="videoknap" onclick="toggleBland();">Jeg kan selv:</div>
+                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene
+                    køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.
+                </p>
+                <div class="videoknap" onclick="toggleBland();">Jeg kan selv:</div>
             </div>
             <div class="børnelayout" id="bland">
                 <div class="video">
@@ -235,21 +247,24 @@
                     </video>
                 </div>
                 <div class="børnetekst">
-                    <div class="videoknap" onclick="toggleVideo('blandVideo')"><img class="playpause" src="media/playpause.png" alt="play/pause"></div>
+                    <div class="videoknap" onclick="toggleVideo('blandVideo')"><img class="playpause"
+                            src="media/playpause.png" alt="play/pause"></div>
                     <h3 class="margintop30">Jeg kan selv:</h3>
                     <p>Blande ris med rejer, laks og grøntsager</p>
                 </div>
             </div>
-        
+
 
             <div class="kuglestreg"></div>
-        
-        
+
+
 
             <div class="voksenlayout">
                 <h3 class="tal">4</h3>
-                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.</p>
-                    <div class="videoknap" onclick="toggleKugle();">Jeg kan selv:</div>
+                <p>Kog risene efter anvisningen på pakken. Bland sukker og risvineddike til en jævn blanding. Lad risene
+                    køle af spredt ud på en ren bradepande. Når de er kølige, dryp eddikeblandingen ligeligt over dem.
+                </p>
+                <div class="videoknap" onclick="toggleKugle();">Jeg kan selv:</div>
             </div>
             <div class="børnelayout" id="kugle">
                 <div class="video">
@@ -258,12 +273,14 @@
                     </video>
                 </div>
                 <div class="børnetekst">
-                     <div class="videoknap" onclick="toggleVideo('kugleVideo')"><img class="playpause" src="media/playpause.png" alt="play/pause"></div>
+                    <div class="videoknap" onclick="toggleVideo('kugleVideo')"><img class="playpause"
+                            src="media/playpause.png" alt="play/pause"></div>
                     <h3 class="margintop30">Jeg kan selv:</h3>
-                    <p>Lægge strimler af agurk, mango eller laks på husholdningsfilm, trille ris til kugle og lægge ovenpå og dreje filmen stramt om fyldet.</p>
+                    <p>Lægge strimler af agurk, mango eller laks på husholdningsfilm, trille ris til kugle og lægge
+                        ovenpå og dreje filmen stramt om fyldet.</p>
                 </div>
             </div>
-        
+
             <div class="kuglestreg"></div>
 
             <img class="johanbund laptop" src="media/LsushiJohan.jpg" alt="sushikugler">
@@ -271,10 +288,36 @@
 
         </div>
 
-    
-               
-    
-        
-        
+        <footer>
+            <div class="footeraddon">
+                <div class="række">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="række">
+                    <ul>
+                        <li><a href="maltidskasser.html">Måltidskasser</a></li>
+                        <li><a href="omos.html">Om Os</a></li>
+                        <li><a href="#">Cvr. 12 34 56 78</a></li>
+                        <li><a href="#">Kontakt Os</a></li>
+                    </ul>
+                </div>
+
+
+                <h4>
+                    Nippon Copyright © 2023 Nippon - All rights reserved
+                </h4>
+
+
+
+            </div>
+        </footer>
+
+
+
+
     </main>
 </body>
