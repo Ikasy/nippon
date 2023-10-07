@@ -1262,6 +1262,9 @@ strong {
     margin-left: 15px;
   }
   
+  .abonner-actions{
+    padding: 5%;
+  }
   
   .abonner-knap {
     border-radius: 50px;
