@@ -729,6 +729,7 @@ strong {
   margin-top: 75px;
   padding-bottom: 75px;
   display: flex;
+  align-items: center;
 }
 .sushitilalle {
   width: 50%;
@@ -808,6 +809,10 @@ strong {
   height: 25px;
   width: 45px;
 }
+#arbejdstidris {
+  display: flex;
+  align-items: center;
+}
 .videoknap:hover {
   background-color: #193d0d;
   /*yay or nay???*/
@@ -819,6 +824,10 @@ strong {
 .børnetekst h3 {
   margin-bottom: 30px;
 }
+#portionstaeller{
+  margin-left: 30%;
+}
+
 .johanbund{
   width: 50%;
   height: auto;
@@ -1119,7 +1128,12 @@ strong {
   display: flex;
   justify-content: space-between;
 }
-
+/*----------------checkmark-----------------------------------*/
+#checkmarkvideo{
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
 /*---------------------------- footer----------------------------*/
 
 
@@ -1589,7 +1603,17 @@ strong {
   #sushilister {
     flex-direction: column-reverse;
   }
-
+  #arbejdstidris{
+    margin-left: 30%;
+  }
+  #portiontaeller{
+  margin-left: 40%;
+  }
+  .sushitilalle{
+    border-right-style: none;
+    text-align: center;
+  }
+  
   /*-----------------404-----------------------------------------*/
   #fejl404 {
     width: 50%;
@@ -1704,6 +1728,11 @@ width: 100%;
     height: 50px;
     width: 130px;
     font-size: 19px;
+  }
+  /*-----------------chechmark----------------------*/
+  #checkmarkvideo{
+    width: 100%;
+    margin-top: 100px;
   }
 
   /*---------------------------- Footer ----------------------------*/
