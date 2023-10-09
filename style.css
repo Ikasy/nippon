@@ -24,7 +24,10 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
-
+label{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
 #underoverskrift {
   display: flex;
   height: 16px;
@@ -1402,6 +1405,8 @@ span.price {
   float: right;
   color: grey;
 }
+
+
 
 
 
