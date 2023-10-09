@@ -1153,6 +1153,7 @@ strong {
 }
 /*----------------checkmark-----------------------------------*/
 #checkmarkvideo{
+  display: none;
   width: 60%;
   height: auto;
   margin: auto;

@@ -21,6 +21,11 @@ const yakiDiv = document.getElementById("yakiDiv");
 const karryDiv = document.getElementById("karryDiv");
 const sushiDiv = document.getElementById("sushiDiv");
 const samlet = document.getElementById("samletPris");
+const checkmark = document.getElementById("checkmarkvideo");
+const retter = document.getElementById("retter");
+const retoverskrift = document.getElementById("retoverskrift");
+const personerdiv = document.getElementById("personer");
+
 
 const ingredienser2 = document.getElementById("ingredienser2");
 const ingredienser4 = document.getElementById("ingredienser4");
@@ -215,6 +220,11 @@ function toggleKnap(){
 if(efterklik.style.display = "none") {
         efterklik.style.display = "flex";
         ikurv.style.display = "none";
+        checkmark.style.display = "block";
+        retter.style.display = "none";
+        personerdiv.style.display = "none";
+        retoverskrift.style.display = "none";
+
     } else {
         efterklik.style.display = "none";
     }
