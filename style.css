@@ -241,6 +241,7 @@ nav {
   color: black;
   transform: translateY(300px);
   animation: slideUp .8s ease-in-out forwards .8s;
+  margin-bottom: 25px;
 }
 
 .btns {
