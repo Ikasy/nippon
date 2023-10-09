@@ -1176,8 +1176,9 @@ strong {
 }
 #kassepaavejvideo{
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: max-content;
+  margin-left: 20%;
 }
 .kassepaavej {
   border: #1e6904 2px solid;
@@ -1185,12 +1186,18 @@ strong {
   padding: 10px 20px;
   position: absolute;
   text-align: center;
-  top: 55%;
+  justify-content: center;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1; 
   width: 10%;
+
 }
+
+
+
+
 /*---------------------------- footer----------------------------*/
 
 
