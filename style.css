@@ -1195,8 +1195,24 @@ strong {
   transform: translate(-50%, -50%);
   z-index: 1; 
   width: 10%;
+}
+.kassepaavej:hover {
+  background-color: #e7f7eb;
+}
+
+.kassepaavej2 {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  
 
 }
+
+
 
 
 
