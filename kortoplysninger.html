@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Nippon Måltidskasser | Kurv</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="media/nipponlogo.png">
+  <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+
+      <ul class="nav-links">
+
+        <a href="opskrifter.html">Opskrifter</a>
+        <a href="maltidskasser.html">Måltidskasser</a>
+
+        <div class="menu-dropdown" onclick="openDropdown()">
+          <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+          <div class="dropdown-list" id="omlist">
+            <div>
+              <a id="droptop" href="omos.html">Om os</a>
+            </div>
+            <div>
+              <a href="omjapanmad.html">Japansk madkultur</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="headericons">
+          <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
+          <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
+        </div>
+      </ul>
+
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="pladstilheader" class="process">
+    <img src="media/broccoligrøn.png" alt="Første trin ved i købsprocessen">
+    <div class="processlinje"></div>
+    <img src="media/broccolish.png" alt="Andet trin ved i købsprocessen">
+    <div class="processlinje"></div>
+    <img src="media/broccolish.png" alt="Tredje trin ved i købsprocessen">
+    <div class="processlinje"></div>
+    <img src="media/broccolish.png" alt="Fjerde trin ved i købsprocessen">
+  </div>
+
+
+  <div class="row" id="paddingkortoplysninger">
+    <div class="col-75">
+      <div class="containerkortoplysninger">
+
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Faktueringsoplysninger</h3>
+            <br><br>
+            <label for="fname"><i class="fa fa-user"></i> Fuldenavn</label>
+            <input type="text" id="fname" name="firstname" placeholder="Anders Andersen">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="Hejmeddig@gmail.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+            <input type="text" id="adr" name="address" placeholder="Thorvaldsensgade 24">
+            <label for="city"><i class="fa fa-institution"></i> By</label>
+            <input type="text" id="city" name="city" placeholder="Aarhus C">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Land</label>
+                <input type="text" id="state" name="state" placeholder="DK">
+              </div>
+              <div class="col-50">
+                <label for="zip">Postnummer</label>
+                <input type="text" id="zip" name="zip" placeholder="8000">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Betalingsoplysninger</h3>
+            <br><br>
+            <label for="fname">Du kan betale med</label>
+            <div class="betalings-container">
+              <i class="fa fa-cc-visa"></i>
+              <i class="fab fa-apple-pay"></i>
+              <i class="fa fa-cc-mastercard"></i>
+
+            </div>
+            <label for="cname">Kortholders Navn</label>
+            <input type="text" id="cname" name="cardname" placeholder="Anders Andersen">
+            <label for="ccnum">Kortnummer</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="9999-8888-7777-6666">
+            <label for="expmonth">Udløbs måned</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Udløbs år</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2023">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="999">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> sendes til samme adresse
+        </label>
+        <br><br>
+        <div id="kurvknapper">
+          <a class="enkøb" href="maltidskasser.html">Shop videre</a>
+          <a class="abonnement" href="">Gå til betaling</a>
+        </div>
+        <br><br>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    <div class="footeraddon">
+      <div class="række">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <div class="række">
+        <ul>
+          <li><a href="maltidskasser.html">Måltidskasser</a></li>
+          <li><a href="omos.html">Om Os</a></li>
+          <li><a href="#">Cvr. 12 34 56 78</a></li>
+          <li><a href="#">Kontakt Os</a></li>
+        </ul>
+      </div>
+
+
+      <h4>
+        Nippon Copyright © 2023 Nippon - All rights reserved
+      </h4>
+
+
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

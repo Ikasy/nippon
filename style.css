@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,7 +46,7 @@ h3 {
   font-size: 18px;
 }
 
-h4{
+h4 {
   font-family: 'Raleway', sans-serif;
   color: #fff;
   font-size: 12px;
@@ -114,14 +115,15 @@ nav {
   letter-spacing: 1px;
 }
 
-#headericons a{
+#headericons a {
   margin-right: 20px;
 }
-#kurvpng{
+
+#kurvpng {
   width: 30px;
 }
 
-#profilpng{
+#profilpng {
   width: 27px;
 }
 
@@ -242,7 +244,8 @@ nav {
   width: 150px;
   overflow: hidden;
 }
-.btns_more:hover{
+
+.btns_more:hover {
   background-color: #e7f7eb;
 }
 
@@ -477,7 +480,8 @@ input[type=number] {
   text-align: center;
 
 }
-#efterklik{
+
+#efterklik {
   width: 80%;
   display: none;
   justify-content: space-between;
@@ -516,6 +520,7 @@ input[type=number] {
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
+
 .logoomcontainerjapan {
   text-align: center;
   margin-top: 10%;
@@ -608,7 +613,7 @@ strong {
   height: auto;
 }
 
-#portiontaeller{
+#portiontaeller {
   display: flex;
 }
 
@@ -731,6 +736,7 @@ strong {
   display: flex;
   align-items: center;
 }
+
 .sushitilalle {
   width: 50%;
   height: auto;
@@ -745,16 +751,19 @@ strong {
   text-align: left;
   padding-left: 20px;
 }
-#plus{
+
+#plus {
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-#minus{
+
+#minus {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
+
 #sushiopskrift {
   width: 70%;
   margin: auto;
@@ -794,7 +803,8 @@ strong {
   margin-top: 75px;
   display: none;
 }
-.videoknap{
+
+.videoknap {
   background-color: #1e6904;
   color: white;
   height: 30px;
@@ -805,7 +815,8 @@ strong {
   border-radius: 50px;
   margin-top: 30px;
 }
-.playpause{
+
+.playpause {
   height: 25px;
   width: 45px;
 }
@@ -817,6 +828,7 @@ strong {
   background-color: #193d0d;
   /*yay or nay???*/
 }
+
 .børnetekst {
   margin-left: 40px;
 }
@@ -873,7 +885,7 @@ strong {
   justify-content: space-around;
   align-items: center;
   background-color: #b6e0c0;
-  
+
 }
 
 .login,
@@ -885,7 +897,7 @@ strong {
   background-color: transparent;
   position: relative;
   cursor: pointer;
-  
+
 }
 
 .slider {
@@ -1003,15 +1015,18 @@ strong {
 .blur {
   filter: blur(10px);
 }
-.nyMQ{
+
+.nyMQ {
   display: none;
 }
+
 .footeraddon {
   background: #1e6904;
   padding: 30px 0px;
   text-align: center;
   margin-top: 100px;
 }
+
 .footeraddon .række {
   width: 100%;
   margin: 1% 0%;
@@ -1026,7 +1041,7 @@ strong {
 }
 
 .footeraddon .række a:hover {
-  color:black;
+  color: black;
 }
 
 .footeraddon .række ul {
@@ -1042,22 +1057,24 @@ strong {
   font-size: 40px;
   margin: 0% 1%;
 }
+
 /*------------------------ Kurv --------------------------*/
-.process{
+.process {
   width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-.processlinje{
+
+.processlinje {
   width: 50px;
   height: 10px;
   background-color: #193d0d;
   border-radius: 5px;
 }
 
-#tomkurv{
+#tomkurv {
   width: 70%;
   background-color: white;
   border-radius: 15px;
@@ -1072,7 +1089,7 @@ strong {
   align-items: center;
 }
 
-#kurv{
+#kurv {
   width: 70%;
   background-color: white;
   border-radius: 15px;
@@ -1081,50 +1098,56 @@ strong {
   margin: 50px auto;
   padding: 50px;
 }
-#kurvindhold{
+
+#kurvindhold {
   display: flex;
   justify-content: space-between;
 }
-#kurvindhold img{
-  width:40%;
-  height:fit-content;
+
+#kurvindhold img {
+  width: 40%;
+  height: fit-content;
 }
-.kurvfjern{
+
+.kurvfjern {
   background-color: #650909;
-  border:none;
+  border: none;
   margin: 25px 0;
 }
 
-#stipletlinje{
+#stipletlinje {
   border-top: black 2px dashed;
   border-bottom: black 2px dashed;
 
 }
 
-#kurvcontent{
+#kurvcontent {
   width: 50%;
 }
-#kurvcontent div{
+
+#kurvcontent div {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-#kurvdiv{
+#kurvdiv {
   flex-direction: column;
 }
-#kurvdiv div{
+
+#kurvdiv div {
   width: 80%;
   margin: auto;
 }
-#pris{
+
+#pris {
   display: flex;
   justify-content: space-between;
   border-top: black 2px solid;
   border-bottom: black 2px solid;
 }
 
-#kurvknapper{
+#kurvknapper {
   display: flex;
   justify-content: space-between;
 }
@@ -1157,7 +1180,7 @@ strong {
 }
 
 .footer .række a:hover {
-  color:black;
+  color: black;
 }
 
 .footer .række ul {
@@ -1177,132 +1200,208 @@ strong {
 
 /*---------------------------- abonnement profil----------------------------*/
 
-  
-  .profil-kasser{
+
+.profil-kasser {
   display: flex;
   margin-top: 100px;
-  }
+}
 
-  .venstrekasser {
-  
-    float: left;
-    width: 30%;
-    height: auto;
-    margin-top: 8%;
-    margin-left: 5%;
-  
-  }
-  
-  .venstrekassetop {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    filter: drop-shadow(0px 10px 10px #e2e2e2);
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    
-  
-  
-  }
-  .venstrekassetop img{
-    width: 25%;
-    margin-top: 10%;
-  }
-  
-  .venstrekassebund {
-  
-    color: black;
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  .venstrekassebund div img{
-  
+.venstrekasser {
+
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-top: 8%;
+  margin-left: 5%;
+
+}
+
+.venstrekassetop {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+
+
+
+}
+
+.venstrekassetop img {
+  width: 25%;
+  margin-top: 10%;
+}
+
+.venstrekassebund {
+
+  color: black;
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.venstrekassebund div img {
+
   width: 80px;
   height: 80px;
   margin-top: 40px;
-  margin-right:75px;
-  }
-  
-  .knyttedebrugere{
+  margin-right: 75px;
+}
+
+.knyttedebrugere {
   margin-left: 2%;
-  }
+}
+
+.lilleavatartext p {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.højrekasse {
+  border-radius: 15px;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  background-color: white;
+  width: 50%;
+  height: 550px;
+  float: right;
+  margin-top: 8%;
+  margin-right: 5%;
+
+}
+
+
+.info-liste {
+  margin-top: 2%;
+  list-style: none;
+  padding: 15px;
+  font-size: 20px;
+}
+
+
+.info-liste li {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.rund-knap {
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+  background-color: #1E6904;
+  border-radius: 10px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 100%;
+  color: white;
+}
+
+.højrekassetext {
+  margin-left: 15px;
+}
+
+.profiltext {
+  margin-top: 65px;
+  margin-left: 15px;
+}
+
+.abonner-actions {
+  padding: 5%;
+}
+
+.abonner-knap {
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: #1e6904;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 2%;
+}
+
+.abonner-knap:first-child {
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+/*---------------------------- Kortoplysninger ----------------------------*/
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 75px;
+  margin: 0 -16px;
+
+}
+
+#paddingkortoplysninger{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
   
-  .lilleavatartext p {
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .højrekasse {
-    border-radius: 15px;
-    filter: drop-shadow(0px 10px 10px #e2e2e2);
-    background-color: white;
-    width: 50%;
-    height: 550px;
-    float: right;
-    margin-top: 8%;
-    margin-right: 5%;
-  
-  }
-  
-  
-  .info-liste {
-    margin-top: 2%;
-    list-style: none;
-    padding: 15px;
-    font-size: 20px;
-  }
-  
-  
-  .info-liste li {
-    margin-bottom: 30px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .rund-knap {
-    display: inline-block;
-    width: 60px;
-    height: 20px;
-    background-color: #1E6904;
-    border-radius: 10px;
-    margin-left: 50px;
-    text-align: center;
-    line-height: 100%;
-    color: white;
-  }
-  
-  .højrekassetext {
-    margin-left: 15px;
-  }
-  
-  .profiltext {
-    margin-top: 65px;
-    margin-left: 15px;
-  }
-  
-  .abonner-actions{
-    padding: 5%;
-  }
-  
-  .abonner-knap {
-    border-radius: 50px;
-    padding: 10px 20px;
-    background-color: #1e6904;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 2%;
-  }
-  
-  .abonner-knap:first-child {
-    margin-left: 5%;
-    margin-right: 10%;
-  }
-  
-  
-  
+}
+
+.containerkortoplysninger {
+  background-color: #FFFFFF;
+  padding: 5px 20px 15px 20px;
+  filter: drop-shadow(0px 10px 10px #e2e2e2);
+  border-radius: 15px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.betalings-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
 
 
 
@@ -1362,6 +1461,7 @@ strong {
     background-color: rgba(0, 0, 0, 0);
     padding: 0px;
   }
+
   .nav-active {
     transform: translateX(0);
   }
@@ -1488,15 +1588,17 @@ strong {
     flex-direction: column;
     align-items: start;
   }
+
   /*----------------------------- Kurv ----------------------------------*/
-  .process{
+  .process {
     width: 90%;
   }
-  .process img{
+
+  .process img {
     width: 35px;
   }
 
-  #tomkurv{
+  #tomkurv {
     padding-top: 5%;
     padding-left: 20%;
     width: 90%;
@@ -1504,17 +1606,20 @@ strong {
 
   }
 
-  #kurv{
+  #kurv {
     width: 90%;
   }
-  #kurvindhold{
+
+  #kurvindhold {
     display: block;
     width: 100%;
   }
-  #kurvcontent{
+
+  #kurvcontent {
     width: 100%;
   }
-  #kurvindhold img{
+
+  #kurvindhold img {
     width: 100%;
   }
 
@@ -1580,17 +1685,20 @@ strong {
     text-align: center;
 
   }
-  #sushiopskrift{
+
+  #sushiopskrift {
     width: 50%;
   }
-  .voksenlayout{
+
+  .voksenlayout {
     flex-direction: column;
   }
-  .voksenlayout p{
+
+  .voksenlayout p {
     margin-left: 0px;
     width: 100%;
   }
- 
+
   #sushioplysninger {
     width: 100%;
     padding-left: 0px;
@@ -1624,32 +1732,36 @@ strong {
     width: 50%;
     margin-left: 20%;
   }
- /*---------------------------Abonnemment profil-----------------------------*/
- 
- .profil-kasser{
-  flex-direction: column;
-  align-items: center;
- }
+
+  /*---------------------------Abonnemment profil-----------------------------*/
+
+  .profil-kasser {
+    flex-direction: column;
+    align-items: center;
+  }
 
 
 
-.venstrekasser{
-width: 75%;
-align-items: center;
-}
-.venstrekassetop{
-align-content: center;
-margin-left: 15%;
-}
-.højrekasse{
-margin-left: 10%;
-}
-.profiltext{
-width: 100%;
-}
+  .venstrekasser {
+    width: 75%;
+    align-items: center;
+  }
+
+  .venstrekassetop {
+    align-content: center;
+    margin-left: 15%;
+  }
+
+  .højrekasse {
+    margin-left: 10%;
+  }
+
+  .profiltext {
+    width: 100%;
+  }
 
 
- 
+
   /*---------------------------Add ons-----------------------------*/
   .laptop {
     display: none;
@@ -1670,9 +1782,11 @@ width: 100%;
   .marginbottom400 {
     margin-bottom: 400px;
   }
-  .nyMQ{
+
+  .nyMQ {
     display: none;
   }
+
   /*---------------------------- Login/Signup ----------------------------*/
 
 
@@ -1735,6 +1849,18 @@ width: 100%;
     margin-top: 100px;
   }
 
+  /*---------------------------- Kortoplysninger mobil ----------------------------*/
+
+  @media (max-width: 900px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
   /*---------------------------- Footer ----------------------------*/
 
   .footer {
@@ -1773,14 +1899,15 @@ width: 100%;
 /*der er rod i klammerne, skal den her ned under KeyFrames?????, Jakob: nej tror det er rigitgt nok den hører med til media query */
 
 @media only screen and (max-width: 500px) {
-  .indexh1{
+  .indexh1 {
     font-size: 40px;
   }
-  .container_content{
+
+  .container_content {
     padding-bottom: 50px;
   }
 
-  #kurvknapper{
+  #kurvknapper {
     flex-direction: column;
   }
 
@@ -1810,12 +1937,3 @@ width: 100%;
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
-
-
-
-
-
-
-
