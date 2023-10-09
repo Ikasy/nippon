@@ -90,7 +90,9 @@ header {
 #pladstilheader {
   margin-top: 165px;
 }
-
+#mobilpladstilheader{
+  margin-top: 165px;
+}
 .logo {
   width: 100px;
 }
@@ -728,6 +730,14 @@ strong {
 }
 
 #sushikuglepic {
+  width: 70%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+#mobilsushikuglepic {
   width: 70%;
   height: auto;
   margin: auto;
