@@ -24,7 +24,9 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
-label{
+
+label, 
+span {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
 }
@@ -1411,6 +1413,13 @@ span.price {
   color: grey;
 }
 
+
+/* -------------------- godkend ------------------------------------- */
+
+.billedergodkend{
+  justify-content: center;
+  text-align: center;
+}
 
 
 

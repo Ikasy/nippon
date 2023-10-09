@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Nippon Måltidskasser | Kurv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="media/nipponlogo.png">
+    <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+
+            <ul class="nav-links">
+
+                <a href="opskrifter.html">Opskrifter</a>
+                <a href="maltidskasser.html">Måltidskasser</a>
+
+                <div class="menu-dropdown" onclick="openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                    <div class="dropdown-list" id="omlist">
+                        <div>
+                            <a id="droptop" href="omos.html">Om os</a>
+                        </div>
+                        <div>
+                            <a href="omjapanmad.html">Japansk madkultur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="headericons">
+                    <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
+                    <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
+                </div>
+            </ul>
+
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="pladstilheader" class="process">
+        <img src="media/broccoligrå.png" alt="Første trin ved i købsprocessen">
+        <div class="processlinje"></div>
+        <img src="media/broccoligrå.png" alt="Andet trin ved i købsprocessen">
+        <div class="processlinje"></div>
+        <img src="media/broccoligrøn.png" alt="Tredje trin ved i købsprocessen">
+        <div class="processlinje"></div>
+        <img src="media/broccolish.png" alt="Fjerde trin ved i købsprocessen">
+    </div>
+
+    <div id="kurv">
+        <div id="kurvindhold">
+
+            <div id="kurvcontent">
+                <div>
+                    <h2>Din kasse</h2>
+                    <h2>Antal</h2>
+                </div>
+                <div>
+                    <h2>Børn</h2>
+
+                </div>
+                <div id="stipletlinje">
+                    <h2>Personer</h2>
+                    <h2 id="insPersoner"></h2>
+                </div>
+                <div id="kurvdiv">
+                    <h2>Retter</h2>
+                    <div id="yakiDiv">
+                        <p>Yakisoba</p>
+                        <p id="insYaki"></p>
+                    </div>
+                    <div id="karryDiv">
+                        <p>Japansk Karry</p>
+                        <p id="insKarry"></p>
+                    </div>
+                    <div id="sushiDiv">
+                        <p>Sushi Kugler</p>
+                        <p id="insSushi"></p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="billedergodkend">
+                <img src="media/LKasserFritlagtBørn.png" alt="Børnekasse">
+            </div>
+        </div>
+
+        <div id="pris">
+            <h2>Samlet beløb:</h2>
+            <h2 id="samletPris"></h2>
+        </div>
+
+        <div id="kurvknapper">
+            <a class="enkøb" href="kortoplysninger.html">Tilbage</a>
+            <a class="abonnement" href="kassepaavej.html">Godkend</a>
+        </div>
+    </div>
+
+    <div id="tomkurv">
+        <h2> Kurven er tom</h2>
+        <a class="abonnement" href="maltidskasser.html">Find din måltidskasse</a>
+    </div>
+
+    <footer>
+        <div class="footeraddon">
+            <div class="række">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="række">
+                <ul>
+                    <li><a href="maltidskasser.html">Måltidskasser</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                    <li><a href="#">Cvr. 12 34 56 78</a></li>
+                    <li><a href="#">Kontakt Os</a></li>
+                </ul>
+            </div>
+
+
+            <h4>
+                Nippon Copyright © 2023 Nippon - All rights reserved
+            </h4>
+
+
+
+        </div>
+    </footer>

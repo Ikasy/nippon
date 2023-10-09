@@ -266,17 +266,9 @@ if (fuldKurv !== null || tomKurv !== null ){
     }  else {
         sushiDiv.style.display = "none";
     } 
-samlet.innerHTML =sessionStorage.getItem("totalpris");
+    
+    samlet.innerHTML =sessionStorage.getItem("totalpris");
 
-
-
-
-
-
-    if ( document.getElementById("demo") !== null){
-        let yakisobaamount = sessionStorage.getItem("yakisoba");
-        document.getElementById("demo").innerHTML = yakisobaamount;
-    }
 }
 
 
