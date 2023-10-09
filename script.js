@@ -4,6 +4,8 @@ const navLinks = document.querySelectorAll(".nav-links a"); /*dette er et array 
 const yakisoba = document.getElementById("yakisobanrretter");
 const karry = document.getElementById("karrynrretter");
 const sushi = document.getElementById("sushinrretter");
+const tama = document.getElementById("tamanrretter");
+const ramen = document.getElementById("ramennrretter");
 const personer = document.getElementById("person");
 const ikurv = document.getElementById("ikurv");
 const drypRisDiv = document.getElementById("drypris");
@@ -17,9 +19,14 @@ const insPersoner = document.getElementById("insPersoner");
 const insYaki = document.getElementById("insYaki");
 const insKarry = document.getElementById("insKarry");
 const insSushi = document.getElementById("insSushi");
+const insTama = document.getElementById("insTama");
+const insRamen = document.getElementById("insRamen");
 const yakiDiv = document.getElementById("yakiDiv");
 const karryDiv = document.getElementById("karryDiv");
 const sushiDiv = document.getElementById("sushiDiv");
+const tamaDiv = document.getElementById("tamaDiv");
+const ramenDiv = document.getElementById("ramenDiv");
+
 const samlet = document.getElementById("samletPris");
 const checkmark = document.getElementById("checkmarkvideo");
 const retter = document.getElementById("retter");
@@ -160,6 +167,9 @@ function tilfoejTilKurv(){
     let karryinput = parseFloat(karry.value);
     let yakisobainput = parseFloat(yakisoba.value);
     let sushiinput = parseFloat(sushi.value);
+    let tamainput = parseFloat(tama.value);
+    let rameninput = parseFloat(ramen.value);
+
     let person = parseFloat(personer.value);
 
     if (person > 0){
@@ -191,8 +201,23 @@ function tilfoejTilKurv(){
         sessionStorage.setItem("kurvcheck", true);      
     }
 
+    if (!Number.isNaN(tamainput) && tamainput > 0){
+        sessionStorage.setItem("tama", tamainput);
+        sessionStorage.setItem("kurvcheck", true);
+    } else {
+        sessionStorage.setItem("tama", 0);
+        sessionStorage.setItem("kurvcheck", true);      
+    }
+    if (!Number.isNaN(rameninput) && rameninput > 0){
+        sessionStorage.setItem("ramen", rameninput);
+        sessionStorage.setItem("kurvcheck", true);
+    } else {
+        sessionStorage.setItem("ramen", 0);
+        sessionStorage.setItem("kurvcheck", true);      
+    }
+
     //samler prisen for alle input
-    let totalretter = (sushiinput + karryinput + yakisobainput) * person;
+    let totalretter = (sushiinput + karryinput + yakisobainput + tamainput + rameninput) * person;
     console.log(totalretter);
     let totalpris = totalretter * 50;
     console.log(totalpris);
@@ -209,6 +234,8 @@ function fjernIndhold() {
     sessionStorage.removeItem("yakisoba");
     sessionStorage.removeItem("karry");
     sessionStorage.removeItem("sushi");
+    sessionStorage.removeItem("tama");
+    sessionStorage.removeItem("ramen");
     sessionStorage.removeItem("kurvcheck");
     sessionStorage.removeItem("totalpris");
     tomKurv.style.display = "block";
@@ -265,6 +292,16 @@ if (fuldKurv !== null || tomKurv !== null ){
         insSushi.innerHTML = sessionStorage.getItem("sushi");
     }  else {
         sushiDiv.style.display = "none";
+    } 
+    if (sessionStorage.getItem("tama") > 0){
+        insTama.innerHTML = sessionStorage.getItem("tama");
+    }  else {
+        tamaDiv.style.display = "none";
+    } 
+    if (sessionStorage.getItem("ramen") > 0){
+        insRamen.innerHTML = sessionStorage.getItem("ramen");
+    }  else {
+        ramenDiv.style.display = "none";
     } 
     
     samlet.innerHTML =sessionStorage.getItem("totalpris");

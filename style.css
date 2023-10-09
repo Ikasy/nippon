@@ -1130,6 +1130,9 @@ strong {
   border: none;
   margin: 25px 0;
 }
+.kurvfjern:hover{
+  background-color: #4c0606;
+}
 
 #stipletlinje {
   border-top: black 2px dashed;
