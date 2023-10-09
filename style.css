@@ -1154,9 +1154,14 @@ strong {
   display: flex;
   justify-content: space-between;
 }
-/*----------------checkmark-----------------------------------*/
+/*----------------checkmark og kasse paa vej-----------------------------------*/
 #checkmarkvideo{
   display: none;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+#kassepaavejvideo{
   width: 60%;
   height: auto;
   margin: auto;
@@ -1851,6 +1856,10 @@ span.price {
   }
   /*-----------------chechmark----------------------*/
   #checkmarkvideo{
+    width: 100%;
+    margin-top: 100px;
+  }
+  #kassepaavejvideo{
     width: 100%;
     margin-top: 100px;
   }
