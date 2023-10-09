@@ -10,13 +10,87 @@
     <link rel="icon" href="media/nipponlogo.png">
     <title>KASSE PÅ VEJ</title>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+
+            <ul class="nav-links">
+
+                <a href="opskrifter.html">Opskrifter</a>
+                <a href="maltidskasser.html">Måltidskasser</a>
+
+                <div class="menu-dropdown" onclick="openDropdown()">
+                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+                    <div class="dropdown-list" id="omlist">
+                        <div>
+                            <a id="droptop" href="omos.html">Om os</a>
+                        </div>
+                        <div>
+                            <a href="omjapanmad.html">Japansk madkultur</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="headericons">
+                    <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
+                    <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
+                </div>
+            </ul>
+
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
     <main>
         <div id="kassepaavejvideo">
+
+
             <video muted autoplay width="100%" heigth="100%">
                 <source src="media/Kasse-på-vej_MP4.mp4">
             </video>
+
+            <a class="kassepaavej" href="kortoplysninger.html">Tilbage</a>
+
         </div>
 
+
+
     </main>
+
+    <footer>
+        <div class="footeraddon">
+            <div class="række">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="række">
+                <ul>
+                    <li><a href="maltidskasser.html">Måltidskasser</a></li>
+                    <li><a href="omos.html">Om Os</a></li>
+                    <li><a href="#">Cvr. 12 34 56 78</a></li>
+                    <li><a href="#">Kontakt Os</a></li>
+                </ul>
+            </div>
+
+
+            <h4>
+                Nippon Copyright © 2023 Nippon - All rights reserved
+            </h4>
+
+
+
+        </div>
+    </footer>
+
 </body>
+
+</html>

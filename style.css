@@ -1165,8 +1165,9 @@ strong {
 }
 #kassepaavejvideo{
   width: 60%;
-  height: auto;
+  height: 90%;
   margin: auto;
+  text-align: center;
 }
 /*---------------------------- footer----------------------------*/
 
@@ -1419,6 +1420,15 @@ span.price {
 .billedergodkend{
   justify-content: center;
   text-align: center;
+}
+
+.kassepaavej {
+  border: #1e6904 2px solid;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-top: -60px;
+  z-index: 2;
+  
 }
 
 
@@ -1871,6 +1881,7 @@ span.price {
   #kassepaavejvideo{
     width: 100%;
     margin-top: 100px;
+    
   }
 
   /*---------------------------- Kortoplysninger mobil ----------------------------*/
