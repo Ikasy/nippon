@@ -1759,18 +1759,24 @@ span.price {
   }
 
   #sushiopskrift {
-    width: 50%;
+    width: 80%;
   }
 
   .voksenlayout {
     flex-direction: column;
+    width: 100%;
   }
 
   .voksenlayout p {
     margin-left: 0px;
     width: 100%;
   }
-
+  .børnelayout{
+    width: 100%;
+  }
+  .video{
+    width: 100%;
+  }
   #sushioplysninger {
     width: 100%;
     padding-left: 0px;
