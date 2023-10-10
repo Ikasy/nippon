@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +11,18 @@
     <link rel="icon" href="media/nipponlogo.png">
     <script src="https://kit.fontawesome.com/6978fc69bd.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+<header>
+    <nav>
+        <a href="index.html"><img class="logo" src="media/nipponlogo.png" alt="Nippon Logo"></a>
+        
+        <ul class="nav-links"> 
+            
+            <a href="opskrifter.html">Opskrifter</a> 
+            <a href="maltidskasser.html">Måltidskasser</a>
 
-            <ul class="nav-links">
-
-                <a href="opskrifter.html">Opskrifter</a>
-                <a href="maltidskasser.html">Måltidskasser</a>
-
-                <div class="menu-dropdown" onclick="openDropdown()">
-                    <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
+            <div class="menu-dropdown" onclick = "openDropdown()">
+                <a id="omjs" href="#">Om<img id="dropdownikon" src="media/pilned.png" alt="Dropdown menu"></a>
                     <div class="dropdown-list" id="omlist">
                         <div>
                             <a id="droptop" href="omos.html">Om os</a>
@@ -33,23 +31,23 @@
                             <a href="omjapanmad.html">Japansk madkultur</a>
                         </div>
                     </div>
-                </div>
-
-                <div id="headericons">
-                    <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png"></a>
-                    <a href="profil.html"><img id="profilpng" src="media/profilikon.png"></a>
-                </div>
-            </ul>
-
-
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
             </div>
-        </nav>
-    </header>
 
+            <div id="headericons">
+                <a href="kurv.html"><img id="kurvpng" src="media/kurvikon.png" alt="Profil"></a>
+                <a href="profil.html"><img id="profilpng" src="media/profilikon.png" alt="Profil"></a>
+            </div>
+        </ul>
+        
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+</header>
+    
     <div id="pladstilheader" class="process">
         <img src="media/broccoligrøn.png" alt="Første trin ved i købsprocessen">
         <div class="processlinje"></div>
@@ -59,8 +57,8 @@
         <div class="processlinje"></div>
         <img src="media/broccolish.png" alt="Fjerde trin ved i købsprocessen">
     </div>
-
-    <div id="kurv">
+    
+    <div id="kurv" >
         <div id="kurvindhold">
             <img src="media/LKasserFritlagtBørn.png" alt="Børnekasse">
             <div id="kurvcontent">
@@ -74,21 +72,33 @@
                 </div>
                 <div id="stipletlinje">
                     <h2>Personer</h2>
-                    <h2 id="insPersoner"></h2>
+                    <h2 id="insPersoner">Personer</h2>
                 </div>
                 <div id="kurvdiv">
                     <h2>Retter</h2>
+                    <div id="sushiDiv">
+                        <p>Sushi Kugler</p>
+                        <p id="insSushi"></p>
+                    </div>
+                
+                    <div id="tamaDiv">
+                        <p>Tamagoyaki</p>
+                        <p id="insTama"></p>
+                    </div>
+                
+                    <div id="karryDiv">
+                        <p>Kare Raisu</p>
+                        <p id="insKarry"></p>
+                    </div>
+                
                     <div id="yakiDiv">
                         <p>Yakisoba</p>
                         <p id="insYaki"></p>
                     </div>
-                    <div id="karryDiv">
-                        <p>Japansk Karry</p>
-                        <p id="insKarry"></p>
-                    </div>
-                    <div id="sushiDiv">
-                        <p>Sushi Kugler</p>
-                        <p id="insSushi"></p>
+
+                    <div id="ramenDiv">
+                        <p>Ramen</p>
+                        <p id="insRamen"></p>
                     </div>
                 </div>
             </div>
@@ -96,7 +106,7 @@
 
         <div id="pris">
             <h2>Samlet beløb:</h2>
-            <h2 id="samletPris"></h2>
+            <h2 id="samletPris"> Pris</h2>
         </div>
 
         <div id="kurvknapper">
@@ -128,16 +138,15 @@
                 </ul>
             </div>
 
-
-            <h4>
-                Nippon Copyright © 2023 Nippon - All rights reserved
-            </h4>
-
+            
+                <h4>
+                    Nippon Copyright © 2023 Nippon - All rights reserved
+                </h4>
+            
 
 
         </div>
     </footer>
 
 </body>
-
 </html>
